@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <script src="Diseño2.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="main()" class="body1_1">
+
+    <fieldset>
+        <header class="header_Taller_1">
+            <h1>
+                Taller de variables e impresión
+            </h1>
+    
+            <p>
+                A continuación se describirán los ejercicios que deberá realizar. Por favor guardar los ejercicios dado que serán requeridos en entregas posteriores. Todos los ejercicios deben estar escritos en PSeInt con el perfil Estricto.
+    
+            </p>
+    
+            <ol>
+                <li>
+                    Realizar un programa el cual solicite su nombre y apellidos.
+                </li>
+                <li>
+                    Realizar un programa el cual solicite su nombre, apellidos, edad y estatura.
+                </li>
+                <li>
+                    Realizar un programa el cual solicite su nombre y apellidos, también debe capturar nombre y apellidos de su padre y madre. Al finalizar debe imprimir en pantalla el siguiente mensaje "Yo [Nombre Completo], soy hijo de [Nombre de la Madre] y [Nombre del Padre].
+                </li>
+                <li>
+                    Realizar un programa el cual solicite el nombre de una ciudad capital y el país. Al finalizar debe imprimir en pantalla el siguiente mensaje "La ciudad [Nombre de la Ciudad], es la capital del país [Nombre del País]
+                </li>
+                <li>
+                    Realizar un programa el cual solicite el nombre de su mascota, edad de la mascota, el tipo de mascota y su nombre completo. Al finalizar el sistema debe e imprimir en pantalla el siguiente mensaje: [Nombre de Mascota] es un(a) [Tipo de Mascota], el cual, tiene [Edad de la Mascota] años de edad y [Nombre Completo] es actualmente su dueño(a).
+                </li>
+    
+    
+            </ol>    
+        </header>
+
+        
+
+        <article>
+            
+
+            <button class="acordeon"><h1 class="pseint">
+                Solucion PSeint
+            </h1> </button>
+            <div class="panel">
+                <fieldset>
+                    <button class="acordeon">punto 1 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller1_1
+                                Definir nombre Como Caracter;
+                                Definir apellido Como Caracter;
+                                Escribir "Porfavor digite su nombre, luego pulse enter para digitar su apellido.";
+                                Leer nombre;
+                                Leer apellido;
+                                FinProceso
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller1.png" alt="" width="600">
+                        </pre>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    
+                    <button class="acordeon">punto 2 </button>
+                    <div class="panel">
+                        <pre>
+                        
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller1_2
+                                Definir nombre Como Caracter;
+                                Definir apellidos Como Caracter;
+                                Definir edad Como Entero;
+                                Definir estatura Como Real;
+                                Escribir "Porfavor digite su nombre, luego pulse enter para digitar su apellido y el mismo proceso para que digite su edad y estatura.";
+                                Leer nombre;
+                                Leer apellidos;
+                                Leer edad;
+                                Leer estatura;
+                                FinProceso
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller1_2.png" alt="" width="700">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset>
+                    
+                    <button class="acordeon">punto 3 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller1_3
+                                Escribir "Porfavor digite su nombre, luego pulse enter para digitar su apellido.";
+                                Definir nombre Como Caracter;
+                                Definir apellidos Como Caracter;
+                                Definir nombre_padre Como Caracter;
+                                Definir nombre_madre Como Caracter;
+                                Definir apellido_padre Como Caracter;
+                                Definir apellido_madre Como Caracter;
+        
+                                Leer nombre;
+                                Leer apellidos;
+                                Escribir "Hola ",nombre," ", apellidos;
+                                Escribir "Ahora, porfavor digite el nombre de su padre, luego oprima enter e ingrese el apellido del mismo. Realizado esto, haga el mismo proceso con el nombre de su madre.";
+                                Leer nombre_padre;
+                                Leer apellido_padre;
+                                Leer nombre_madre;
+                                Leer apellido_madre;
+                                Escribir "Yo ", nombre," ",apellidos," Soy hijo de ", nombre_padre," ", apellido_padre, " y ",nombre_madre," ",apellido_madre;
+                                FinProceso
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller1_3.png" alt="" width="800">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset>
+                    
+                    <button class="acordeon">punto 4 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller1_4
+                                Escribir "Porfavor digite el nombre de una ciudad capital, luego oprima enter y digite el pais al que pertenece.";
+                                Definir ciudad Como Caracter;
+                                Definir pais Como Caracter;
+                                Leer ciudad;
+                                Leer pais;
+                                Escribir "La ciudad ",ciudad," es la capital del pais ",pais;
+                                FinProceso
+        
+          
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller1_4.png" alt="" width="700">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset>
+                    
+                    <button class="acordeon">punto 5 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller1_5
+                                Escribir "Porfavor digite el nombre de su mascota,seguido a esto oprima enter y digite el tipo o raza. Realice el mismo proceso con la edad y el nombre del dueño.";
+                                Definir nombre_mascota Como Caracter;
+                                Definir edad Como Entero;
+                                Definir Tipo_mascota Como Caracter;
+                                Definir nombre_dueno Como Caracter;
+                                Leer nombre_mascota;
+                                Leer Tipo_mascota;
+                                Leer edad;
+                                Leer nombre_dueno;
+                                Escribir nombre_mascota, " es un ", Tipo_mascota," el cual tiene ", edad, " años de edad y ",nombre_dueno, " es actualmente su dueño.";
+                                           
+                                FinProceso
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller1_5.png" alt="" width="700">
+                        </pre>    
+                    </div>
+    
+                    
+                </fieldset>
+            </div>
+
+            
+
+            
+        </article>
+        
+        <article>
+
+            <button class="acordeon"><h1 class="pseint">
+                Solucion Java
+            </h1> </button>
+            <div class="panel"> 
+                <fieldset>
+                    <button class="acordeon">punto 1 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner; 
+        
+                                public class Taller1_1 {
+                                    
+                                    public static void main (String args[]) {
+        
+                                        Scanner dato = new Scanner(System.in);
+                                        String nombre = "", apellido = "";
+        
+                                        System.out.println("Porfavor digite su nombre: ");
+                                        nombre = dato.nextLine();
+        
+                                        System.out.println("Porfavor digite su apellido: ");
+                                        apellido = dato.nextLine();
+        
+                                        System.out.println("Bienveido " + nombre + " "+ apellido);
+                                        
+        
+        
+        
+                                    }
+                                }
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller1_1_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+                
+                <fieldset>
+                    
+                    <button class="acordeon">punto 2 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner; 
+        
+                                public class Taller1_2 {
+        
+                                    public static void main(String[] args) {
+        
+                                        Scanner dato = new Scanner(System.in);
+                                        String nombre = "";
+                                        String apellido = "";
+                                        int edad = 0;
+                                        double estatura = 0;
+        
+                                        System.out.println("Porfavor digite su nombre: ");
+                                        nombre = dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("Porfavor digite su apellido: ");
+                                        apellido =dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("Porfavor digite su edad: ");
+                                        edad = dato.nextInt();
+                                        System.out.println(" ");
+                                        System.out.println("Porfavor digite su estatura (Utilice coma en vez de punto): ");
+                                        estatura = dato.nextDouble();
+                                        System.out.println(" ");
+                                        System.out.println("Hola "+ nombre+ " " + apellido+ " Usted tiene "+edad+ " Años y mide "+ estatura);
+                                        
+                                    }
+                                    
+                                }
+        
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller1_2_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+    
+                <fieldset>
+                    <button class="acordeon">punto 3 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner; 
+        
+                                public class Taller1_3 {
+                                    
+                                    public static void main (String args[]) {
+        
+                                        Scanner dato = new Scanner(System.in);
+                                        String nombre = "", apellido = "";
+                                        String nombrepadre = "", apellidopadre = "";
+                                        String nombremadre = "", apellidomadre = "";
+        
+        
+                                        System.out.println("Porfavor digite su nombre: ");
+                                        nombre = dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("Porfavor digite su apellido: ");
+                                        apellido = dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("####### Infomracion de padre #######");
+                                        System.out.println(" ");
+                                        System.out.println("Porfavor digite el nombre de su padre: ");
+                                        nombrepadre = dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("Porfavor digite el apellido de su padre: ");
+                                        apellidopadre = dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("####### Infomracion de madre #######");
+                                        System.out.println(" ");
+                                        System.out.println("Porfavor digite el nombre de su madre: ");
+                                        nombremadre = dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("Porfavor digite el apellido de su madre: ");
+                                        apellidomadre = dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("yo " + nombre + " "+ apellido + " soy hijo de "+ nombrepadre + " " + apellidopadre+ " y "+nombremadre + " " + apellidomadre);
+                                        
+        
+        
+        
+                                    }
+                                }
+        
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller1_3_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                   
+                </fieldset>
+    
+                <fieldset>
+                    
+                    <button class="acordeon">punto 4 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner; 
+        
+                                public class Taller1_4 {
+                                    
+                                    public static void main(String[] args) {
+                                        
+                                        Scanner dato = new Scanner(System.in);
+                                        String Pais = "", Capital = "";
+                                        System.out.println(" ");
+                                        System.out.println("Digite el nombre de la ciudad: ");
+                                        Capital = dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("Digite el nombre del pais: ");
+                                        Pais = dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("La ciudad "+Capital+" es la capital del pais "+Pais);
+                                    }
+                                }
+        
+        
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller1_4_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset>
+                    <button class="acordeon">punto 5 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner; 
+        
+                                public class Taller1_5 {
+                                    
+                                    public static void main (String args[]) {
+                                
+                                        Scanner dato = new Scanner(System.in);
+                                        String nombre = "", apellido = "";
+                                        String nombremascota = "", tipomascota = "";
+                                        int edadmascota = 0;
+                                
+                                
+                                        System.out.println("Porfavor digite su nombre: ");
+                                        nombre = dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("Porfavor digite su apellido: ");
+                                        apellido = dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("####### Infomracion de la mascota #######");
+                                        System.out.println(" ");
+                                        System.out.println("Porfavor digite el nombre de su mascota ");
+                                        nombremascota = dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("Porfavor digite la raza o el tipo de su mascota: ");
+                                        tipomascota = dato.nextLine();
+                                        System.out.println(" ");
+                                        System.out.println("Porfavor digite la edad de su mascota: ");
+                                        edadmascota = dato.nextInt();
+                                        System.out.println(" ");
+                                        System.out.println(nombremascota + " es de raza o tipo  "+ tipomascota + ", el cual, tiene "+ edadmascota + " años de edad " + " y "+nombre + " " + apellido+" es su dueño");
+                                    }
+                                }
+                                
+        
+        
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller1_5_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                   
+                </fieldset>  
+            </div>
+
+
+            
+
+        </article>
+
+        <nav>
+            <a href="talleres.html">Menu principal</a>
+        </nav>
+
+        
+
+    </fieldset>
+    
+    
+</body>
+</html>

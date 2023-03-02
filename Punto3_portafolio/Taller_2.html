@@ -1,0 +1,2280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 2</title>
+    <script src="Diseño2.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="main()"  class="body2">
+
+    <fieldset class="padre">
+        <header>
+            <h1 class="Titulo">
+                Taller de condicionales
+            </h1>
+    
+            <p>
+                A continuación se describirán los ejercicios que deberá realizar. Por favor guardar los ejercicios dado que serán requeridos en entregas posteriores. Todos los ejercicios deben estar escritos en PSeInt con el perfil Estricto.    
+            </p>
+    
+            <ol>
+                <li>
+                    Realizar un programa en el cual se solicite la edad de una persona. Si la persona es mayor o igual a 18 años, deberá mostrar en pantalla: Usted es mayor de edad.
+                </li>
+                <li>
+                    Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años, deberá mostrar en pantalla: Usted aún es un niño(a).
+                </li>
+                <li>
+                    Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la persona es mayor o igual a 18 años, entonce se deberá imprimir en pantalla [Nombre completo] usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad de la persona es menor que 18 años, entonces, deberá imprimirse el siguiente mensaje: [Nombre completo] usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.
+                </li>
+                <li>
+                    La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que adquieren sus usuarios. Para cada usuario se debe permitir la opción de alquilar película, consultar películas disponibles y recibir película en la video tienda con la opción de realizar anotaciones sobre estas si se llegan a presentar daños u otra novedad sobre la película.                </li>
+                <li>
+                    La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas características que deben indicársele al cliente para que pueda escoger el producto a comprar. Para cada cliente, se tienen las opciones de compra de producto, consulta de precios por producto y devoluciones en caso de que se presenten.                
+                </li>
+                <li>
+                    El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las respectivas revisiones y requiere una aplicación que le permita registrar los servicios generados a sus clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones por parte del cliente. También debe existir registro de salida del taller con las novedades y otra de arreglos hechos por el mecánico en caso de que se requiera inventariar cambios repuestos en la motocicleta al entregarla.                </li>
+                <li>
+                    La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada persona encuestada adicional a los datos suministrados, debe mostrar el resultado para cada uno y establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y obeso).                </li>
+                <li>
+                    El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le permita registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene unas características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la aplicación permita registrar los pedidos, las tortas disponibles y las ventas que se registren diariamente.
+                </li>
+                <li>
+                    El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione si desea calcular el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos necesarios para realizar cada cálculo y mostrar su respectivo resultado.                </li>
+                <li>
+                    El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga los atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros o consultas de valor. En los ingresos no se pueden insertar valores negativos y para los retiros el valor no puede ser mayor al valor que tiene en la cuenta.                </li>
+    
+    
+            </ol>    
+        </header>
+
+        
+
+        <article>
+            
+            <button class="acordeon"><h1 class="pseint">
+                Solucion PSeint
+            </h1> </button>
+            <div class="panel">
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 1 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller2_1
+                                Escribir "Porfavor digite su edad";
+                                Definir edad Como Entero;
+                                Leer edad;
+                                si edad >= 18 Entonces
+                                    Escribir "Usted es mayor de edad";
+                                FinSi
+                                FinProceso
+    
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller2_1.png" alt="" width="600">
+                        </pre>
+                    </div>
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    
+                    <button class="acordeon">punto 2 </button>
+                    <div class="panel">
+                        <pre>
+                        
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller2_2
+                                Escribir "Porfavor digite su edad";
+                                Definir edad Como Entero;
+                                Leer edad;
+                                si edad &lt18 Entonces
+                                    Escribir "Usted aun es un niño(a)";
+                                FinSi
+                                
+                                FinProceso
+    
+                                
+    
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller2_2.png" alt="" width="700">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    
+                    <button class="acordeon">punto 3 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller2_3
+                                Escribir "Porfavor digite su nombre, seguido a esto oprima enter y digite su apellido. Haga el mismo procedimiento con su edad";
+                                Definir nombre Como Caracter;
+                                Definir apellido Como Caracter;
+                                Definir edad como Entero;
+                                Leer nombre;
+                                Leer apellido;
+                                Leer edad;
+    
+                                si edad >= 18 Entonces
+                                    Escribir nombre," ",apellido, " Usted es mayor de edad, por lo tanto puede entrar a la fiesta.";
+                                SiNo
+                                    Escribir nombre, " ", apellido, " Usted es menor de edad, por lo tanto, no puede entrar a la fiesta , por favor devuelvase a su casa";
+                                    
+                                FinSi
+    
+    
+                                FinProceso
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller2_3.png" alt="" width="800">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    
+                    <button class="acordeon">punto 4 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller2_4
+                                Definir alquilar_peli Como Caracter;
+                                Definir Escoger Como entero;
+                                Definir Entregar Como caracter;
+                                Definir reportar Como Entero;
+                                Definir opcion Como Entero;
+                                Definir novedad Como Caracter;
+                                Escribir "Bienvinido a la tienda-video selecciona una opcion para continuar: ";
+                                Escribir "1. Alquilar pelicula!";
+                                Escribir "2. Consultar peliculas disponibles";
+                                Escribir "3. Entregar pelicula";
+                                Leer opcion;
+    
+                                segun opcion Hacer
+                                    1:
+                                        Escribir "¿Que pelicula desea alquilar?";
+                                        Escribir "Titanic, Buscando a nemo, los invencibles";
+                                        Leer alquilar_peli;
+                                        Escribir "Se le ha alquilado ", alquilar_peli," Gracias";
+                                    2:
+                                        Escribir "Peliculas disponibles: ";
+                                        Escribir "1.Titanic";
+                                        Escribir "2.Buscando a nemo";
+                                        Escribir "3.Los invencibles";
+                                        Escribir "¿Que pelicula desea alquilar?";
+                                        Leer Escoger;
+                                        
+                                        segun Escoger Hacer
+                                            1:
+                                                Escribir "Haz alquilado la pelicula de Titanic.";
+                                            2:
+                                                Escribir "Haz alquilado la pelicula de Buscando a nemo.";
+                                            3:
+                                                Escribir "Haz alquilado la pelicuala los invencibles.";
+                                            4:
+                                                Escribir "Opcion no valida, saliendo del programa";
+                                                
+                                        FinSegun
+                                        
+                                        
+                                    3:
+                                        Escribir "¿Que pelicula va a entregar?";
+                                        Leer Entregar;
+                                        Escribir "¿La pelicula presenta alguna novedad?";
+                                        Escribir "1. Si";
+                                        Escribir "2. No";
+                                        Leer reportar;
+                                        si reportar= 1 Entonces
+                                            Escribir "¿Cual es la novedad?";
+                                            Leer novedad;
+                                            Escribir "Se ha guardado la informacion, la pelicula tiene", novedad; 
+                                        SiNo
+                                            Escribir "La pelicula se encuentra en buen estado";
+                                            Escribir "Saliendo del programa";
+                                        FinSi
+                                FinSegun
+    
+    
+                                FinProceso
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller2_4.png" alt="" width="500">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    
+                    <button class="acordeon">punto 5 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                            Proceso Taller2_5
+                            Escribir "Bienvenido a drogueria Mi Salud, A continuacion observara un menu con diferentes opciones, porfavor escoga la que mas le convenga.";
+                            Definir Opcion Como Entero;
+                            Definir Opcion_2 Como Entero;
+                            Definir Opcion_compra Como Entero;
+                            Definir Consulta_precios Como Caracter;
+                            Definir Devoluciones Como Entero;
+    
+                            Escribir "1.Medicamentos";
+                            Escribir "2.Precios ";
+                            Escribir "3.Devoluciones";
+                            Leer Opcion;
+    
+                            Segun Opcion Hacer
+                            1:
+                            Definir seleccion_med Como Entero;
+                            Definir seleccion_med1 Como Entero;
+                            Definir seleccion_med2 Como Entero;
+                            Escribir "¿Que clase de medicamentos necesita?";
+                            Escribir " 1.Para dolor";
+                            Escribir " 2.Para acidez";
+                            Escribir " 3.Para la tension";
+                            Leer Opcion_2;
+    
+                            segun Opcion_2 Hacer
+                            1:
+                            Escribir "Los siguientes medicamentos para dolor son los que tenemos disponibles: ";
+                            Escribir "1.Acetaminofen : 50mg , para el dolor de cabeza , fiebre y dolor";
+                            Escribir "2.Naproxeno : 50 mg, Para el dolor del cuerpo, fiebre.";
+                            Escribir "3.Ibuprofeno : 50mg, Para el dolor general, fiebre, dolor corporal.";
+                            Leer seleccion_med;
+                            si seleccion_med = 1 Entonces
+                            Escribir "La tabla de acetaminofen tiene un costo de 2000 mil pesos";
+                            Sino 
+                            Escribir "La tabla de naproxeno tiene un costo de 3500 pesos";
+    
+                            FinSi
+                            2:
+                            Escribir "Los siguientes medicamentos para la acidez son los que tenemos disponibles: ";
+                            Escribir "Alka-seltzer : 50mg ";
+                            Escribir "Mylanta : 50 mg";
+                            Escribir "Hiosina: 50mg";
+                            Leer seleccion_med1;
+                            3:
+                            Escribir "Los siguientes medicamentos para la tension son los que tenemos disponibles: ";
+                            Escribir "Losartan: 50mg";
+                            Escribir "Hygroton :50 mg";
+                            Escribir "Diuril : 50mg";
+                            Leer seleccion_med2;
+    
+                            FinSegun
+    
+                            2:
+                            Definir Direccion Como Caracter;
+                            Escribir "Esta es la lista de los medicamentos disponibles con su respectivo precio";
+                            Escribir "1.Acetaminofen. Precio: Tableta 2000 mil pesos";
+                            Escribir "2.Dolex. Precio: Tableta 3000 mil pesos";
+                            Escribir "3.Ibuprofeno. Precio: Tableta 2500 mil pesos";
+                            Escribir "4.Naproxeno. Precio: Tableta 3500 mil pesos";		
+                            Escribir "5.Alka-seltzer. Precio: caja por 12, 7000 mil pesos";
+                            Escribir "6.Mylanta. Precio: Marca MK, 700ml , 23000 mil pesos";
+                            Escribir "7.Hiosina. Precio: Tableta x12, 8000 mil pesos";
+                            Escribir "8.Losartan. Precio Tableta, 9000 mil pesos";
+                            Escribir "9.Hygroton. Precio Tableta, 12000 mil pesos";
+                            Escribir "10.Diuril. Precio Tableta, 15000 mil pesos";
+                            Escribir "¿Que medicamento desea, digite el nombre, luego oprima enter?";
+                            Leer Consulta_precios;
+                            Escribir "Por cual medio de pago desea realizar el pedido";
+                            Escribir "1.Transferencia";
+                            Escribir "2.Contra entrega";
+                            Leer Opcion_compra;
+                            si Opcion_compra = 1 Entonces
+                            Escribir "Porfavor enviar el dinero a la siguiente cuenta.";
+                            Escribir "0000000xxxxxxxxx, jose fulanito";
+                            SiNo
+                            Escribir "Porfavor digite su direccion a la que se le hara entrega del producto";
+                            Leer Direccion;
+                            Escribir "El pedido ", Consulta_precios, " sera enviado a la siguiente direccion: ", Direccion, " Gracias por su compra";
+    
+                            FinSi
+    
+                            3:
+                            Definir correcion_nombre Como Caracter;
+                            Escribir "¿Cual es la razon de devolver su producto?";
+                            Escribir "1.El producto no era el que se habia pedido";
+                            Escribir "2.El producto tiene inconsistencias";
+                            Leer Devoluciones;
+    
+                            Si Devoluciones = 1 Entonces
+                            Escribir "Porfavor digite el nombre del producto que habia seleccionado";
+                            Leer correcion_nombre;
+                            SiNo
+                            Escribir "Porfavor empaque el producto y envielo a la siguiente direccion: calle xxxx numero xxx";
+    
+                            FinSi
+    
+                            FinSegun
+    
+                            FinProceso
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller2_5.png" alt="" width="800">
+                        </pre>    
+                    </div>
+    
+                    
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    
+                    <button class="acordeon">punto 6 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller2_6
+                                Definir Opcion Como Entero;
+                                Definir seleccion Como Entero;
+                                Definir Observaciones Como Caracter;
+                                Escribir "Bienvenido al taller para motos El maquinista";
+                                Escribir "¿Que servicio va a registrar?";
+                                Escribir "1.Ingresar moto";
+                                Escribir "2.Registrar salida";
+                                Leer Opcion;
+                                
+                                Segun Opcion Hacer
+                                    1:
+                                        Definir servicio Como logico;
+                                        Definir numer Como Entero;
+                                        Escribir "Bienvenido, ¿que servicio busca?";
+                                        Escribir "1.Lavado";
+                                        Escribir "2.Mantenimiento";
+                                        Leer seleccion;
+                                        si seleccion = 1 Entonces
+                                            Escribir "El lavado dura alrededor de una hora, porfavor tener en cuenta que el taller no responde por perdidas de objetos.";
+                                            Escribir "El precio es de xxxxx pesos, Entendido esto ¿Acepta el servicio? (Verdadero para si, falso para no)";
+                                            Leer servicio;
+                                            si servicio = verdadero entonces
+                                                Escribir "Posicione el vehiculo en uno de los establecimientos programados para lavado. Mucha gracias por su compra.";
+                                            SiNo
+                                                Escribir "Gracias por su tiempo, que tenga un buen dia";
+                                            FinSi
+                                                
+                                                
+                                        SiNo
+                                            Escribir "Para realizar el mantenimiento es necesario que digite los posibles problemas que crea que pueda tener la moto, para que el tecnico este al tanto del problema";
+                                            Leer Observaciones;
+                                            Escribir "Se le ha notificado al tecnico los siguientes problemas: ", Observaciones;
+                                            Escribir "Porfavor digite su numero de contacto para que , una vez finalizado el mantenimiento se le notifique.";
+                                            Leer numer;
+                                            Escribir "Muchas gracias por su pacienciencia, el tecnico se comunicara con usted por el siguiente numero: ", numer, " Que tenga buen dia";
+                                        FinSi
+                                    2:
+                                        Definir registrar Como logico;
+                                        Definir queja Como Caracter;
+                                        Escribir "Se hara el registro de salida para el vehiculo, porfavor digite cual es su satisfaccion con el servicio prestado.";
+                                        Escribir "Digite verdadero si el servicio fue optimo y excelente, de lo contrario, digite falso.";
+                                        Escribir "";
+                                        Leer registrar;
+                                        si registrar = Verdadero Entonces
+                                            Escribir "Nos alegra saber que el servicio fue de su agrado, lo esperamos en una proxima visita, que tenga un excelente dia.";
+                                        SiNo
+                                            Escribir "Porfavor digite cual fue la razon de que su servicio no haya sido adecuado";
+                                            Leer queja;
+                                            Escribir " Se ha guardado la informacion, gracias por su aporte para que cada dia podamos ser mejores. Que tenga un buen dia.";
+                                            
+                                        FinSi
+                                        Escribir "Gracias por elegirnos, que tenga un buen dia ";
+                                        
+                                        
+                                        
+                                FinSegun
+                                
+                                
+                                FinProceso
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller2_6.png" alt="" width="800">
+                        </pre>    
+                    </div>
+    
+                    
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    
+                    <button class="acordeon">punto 7 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller2_7
+                                Definir Kilogramos Como Real;
+                                Definir estatura Como Real;
+                                Definir Kilogramos_2 Como Real;
+                                Definir estatura_2 Como Real;
+                                Definir Kilogramos_3 Como Real;
+                                Definir estatura_3 Como Real;
+                                Definir IMC Como Real;
+                                Definir IMC2 Como Real;
+                                Definir IMC3 Como Real;
+                                Definir peso_bajo,Peso_alto,Peso_malto,Peso_Dalto Como Real;
+                                Definir peso_bajo2,Peso_alto2,Peso_malto2,Peso_Dalto2 Como Real;
+                                Definir peso_bajo3,Peso_alto3,Peso_malto3,Peso_Dalto3 Como Real;
+                                Definir numero_per Como Entero;
+                                Definir nombre1, nombre2, nombre3 Como Caracter;
+                                Escribir "Aplicacion para calcular el indice de masa corporal (IMC).";
+                                Escribir "Porfavor digite el numero de personas que haran la encuesta";
+                                Leer numero_per;
+                                
+                                Segun numero_per Hacer
+                                    1:
+                                        Escribir "Porfavor digite el nombre completo";
+                                        Leer nombre1;
+                                        Escribir "Digite el peso exacto (En kilogramos, utilice punto si es un decimal) de la primera persona, luego oprima enter y digite su estatura(En metros).";
+                                        Leer Kilogramos;
+                                        Leer estatura;
+                                        IMC &lt- Kilogramos/(estatura)^2;
+                                        peso_bajo&lt- 24.9-IMC;
+                                        Peso_alto&lt- IMC-24.9;
+                                        Peso_malto&lt- IMC-24.9;
+                                        Peso_Dalto&lt- (34.9-IMC)* (-1);
+                                        
+                                        Si IMC >16 Y IMC &lt18.4 Entonces
+                                            Escribir nombre1, "Segun su indice de masa corporal ",IMC,"Usted esta por debajo del peso saludable, especificamente ",peso_bajo," del peso ideal";
+                                        SiNo
+                                            Si IMC>18.401 Y IMC&lt=24.9 Entonces
+                                                Escribir nombre1,"Segun su indice de masa corporal ", IMC," Usted se encuentra dentro del rango del peso ideal o normal";
+                                            SiNo
+                                                Si IMC>24.901 Y IMC &lt=29.9 Entonces
+                                                    Escribir "Segun su indice de masa corporal ", IMC," Usted esta por encima del peso saludable , especificamente ", Peso_alto," del peso ideal.";
+                                                SiNo
+                                                    Si IMC>29.901 Y IMC &lt= 34.9 Entonces
+                                                        Escribir "Segun su indice de masa corporal ", IMC," Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad y esta especificamente ", Peso_alto," encima del peso ideal.";
+                                                    SiNo
+                                                        Si IMC >34.901 Entonces
+                                                            Escribir "Segun su indice de masa corporal ", IMC," Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad o obesidad morbida y esta especificamente ", Peso_Dalto," puntos encima del peso ideal.";
+                                                        FinSi
+                                                    FinSi
+                                                FinSi
+                                            FinSi
+                                            
+                                        FinSi
+                                        
+                                    2:
+                                        Escribir "Porfavor digite el nombre completo de la primera persona";
+                                        Leer nombre1;
+                                        Escribir "Porfavor digite el nombre completo de la segunda persona";
+                                        Leer nombre2;
+                                        Escribir "Porfavor digite el peso exacto (En kilogramos, utilice punto si es un decimal) de la primera persona, luego oprima enter y digite su estatura(En metros).";
+                                        Leer Kilogramos;
+                                        Leer estatura;
+                                        Escribir "Porfavor digite el peso exacto (En kilogramos, utilice punto si es un decimal) de la segunda persona, luego oprima enter y digite su estatura(En metros).";
+                                        Leer Kilogramos_2;
+                                        Leer estatura_2;
+                                        IMC &lt- Kilogramos/(estatura)^2;
+                                        IMC2 &lt- Kilogramos_2/(estatura_2)^2;
+                                        
+                                        peso_bajo&lt- 24.9-IMC;
+                                        Peso_alto&lt- IMC-24.9;
+                                        Peso_malto&lt- IMC-24.9;
+                                        Peso_Dalto&lt- (34.9-IMC)* (-1);
+                                        
+                                        peso_bajo2&lt- 24.9-IMC2;
+                                        Peso_alto2&lt- IMC2-24.9;
+                                        Peso_malto2&lt- IMC2-24.9;
+                                        Peso_Dalto2&lt- (34.9-IMC2)* (-1);
+                                        
+                                        Si IMC >16 Y IMC &lt18.4 Entonces
+                                            Escribir nombre1, " Segun su indice de masa corporal ",IMC,"Usted esta por debajo del peso saludable, especificamente ",peso_bajo," del peso ideal";
+                                        SiNo
+                                            Si IMC>18.401 Y IMC&lt=24.9 Entonces
+                                                Escribir nombre1," Segun su indice de masa corporal ", IMC," Usted se encuentra dentro del rango del peso ideal o normal";
+                                            SiNo
+                                                Si IMC>24.901 Y IMC &lt=29.9 Entonces
+                                                    Escribir nombre1," Segun su indice de masa corporal ", IMC," Usted esta por encima del peso saludable , especificamente ", Peso_alto," del peso ideal.";
+                                                SiNo
+                                                    Si IMC>29.901 Y IMC &lt= 34.9 Entonces
+                                                        Escribir nombre1," Segun su indice de masa corporal ", IMC," Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad y esta especificamente ", Peso_malto," encima del peso ideal.";
+                                                    SiNo
+                                                        Si IMC >34.901 Entonces
+                                                            Escribir nombre1," Segun su indice de masa corporal ", IMC," Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad o obesidad morbida y esta especificamente ", Peso_Dalto," puntos encima del peso ideal.";
+                                                        FinSi
+                                                    FinSi
+                                                FinSi
+                                            FinSi
+                                            
+                                        FinSi
+                                        
+                                        Si IMC2 >16 Y IMC2 &lt18.4 Entonces
+                                            Escribir nombre2," Segun su indice de masa corporal ",IMC2,"Usted esta por debajo del peso saludable, especificamente ",peso_bajo2," del peso ideal";
+                                        SiNo
+                                            Si IMC2>18.401 Y IMC2&lt=24.9 Entonces
+                                                Escribir nombre2," Segun su indice de masa corporal ", IMC2," Usted se encuentra dentro del rango del peso ideal o normal";
+                                            SiNo
+                                                Si IMC2>24.901 Y IMC2 &lt=29.9 Entonces
+                                                    Escribir nombre2," Segun su indice de masa corporal ", IMC2," Usted esta por encima del peso saludable , especificamente ", Peso_alto2," del peso ideal.";
+                                                SiNo
+                                                    Si IMC2>29.901 Y IMC2 &lt= 34.9 Entonces
+                                                        Escribir nombre2," Segun su indice de masa corporal ", IMC2," Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad y esta especificamente ", Peso_malto2," encima del peso ideal.";
+                                                    SiNo
+                                                        Si IMC2 >34.901 Entonces
+                                                            Escribir nombre2," Segun su indice de masa corporal ", IMC2," Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad o obesidad morbida y esta especificamente ", Peso_Dalto2," puntos encima del peso ideal.";
+                                                        FinSi
+                                                    FinSi
+                                                FinSi
+                                            FinSi
+                                            
+                                        FinSi
+                                    3:
+                                        Escribir "Porfavor digite el nombre completo de la primera persona";
+                                        Leer nombre1;
+                                        Escribir "Porfavor digite el nombre completo de la segunda persona";
+                                        Leer nombre2;
+                                        Escribir "Porfavor digite el nombre completo de la tercera persona";
+                                        Leer nombre3;
+                                        Escribir "Porfavor digite el peso exacto (En kilogramos, utilice punto si es un decimal) de la primera persona, luego oprima enter y digite su estatura(En metros).";
+                                        Leer Kilogramos;
+                                        Leer estatura;
+                                        Escribir "Porfavor digite el peso exacto (En kilogramos, utilice punto si es un decimal) de la segunda persona, luego oprima enter y digite su estatura(En metros).";
+                                        Leer Kilogramos_2;
+                                        Leer estatura_2;
+                                        Escribir "Porfavor digite el peso exacto (En kilogramos, utilice punto si es un decimal) de la tercera persona, luego oprima enter y digite su estatura(En metros).";
+                                        Leer Kilogramos_3;
+                                        Leer estatura_3;
+                                        IMC &lt- Kilogramos/(estatura)^2;
+                                        IMC2 &lt- Kilogramos_2/(estatura_2)^2;
+                                        IMC3 &lt- Kilogramos_3/(estatura_3)^2;
+                                //			Para el primer consultado
+                                        peso_bajo&lt- 24.9-IMC;
+                                        Peso_alto&lt IMC-24.9;
+                                        Peso_malto&lt- IMC-24.9;
+                                        Peso_Dalto&lt- (34.9-IMC)* (-1);
+                                //			Segundo consultado
+                                        peso_bajo2&lt- 24.9-IMC2;
+                                        Peso_alto2&lt- IMC2-24.9;
+                                        Peso_malto2&lt- IMC2-24.9;
+                                        Peso_Dalto2&lt- (34.9-IMC2)* (-1);
+                                //			Tercer consultado
+                                        peso_bajo3&lt- 24.9-IMC3;
+                                        Peso_alto3&lt- IMC3-24.9;
+                                        Peso_malto3&lt- IMC3-24.9;
+                                        Peso_Dalto3&lt- (34.9-IMC3)* (-1);
+                                        
+                             //		Condicional para el primer consultado
+                                        Si IMC >16 Y IMC &lt18.4 Entonces
+                                            Escribir nombre1, " Segun su indice de masa corporal ",IMC,"Usted esta por debajo del peso saludable, especificamente ",peso_bajo," del peso ideal";
+                                        SiNo
+                                            Si IMC>18.401 Y IMC&lt=24.9 Entonces
+                                                Escribir nombre1," Segun su indice de masa corporal ", IMC," Usted se encuentra dentro del rango del peso ideal o normal";
+                                            SiNo
+                                                Si IMC>24.901 Y IMC &lt=29.9 Entonces
+                                                    Escribir nombre1," Segun su indice de masa corporal ", IMC," Usted esta por encima del peso saludable , especificamente ", Peso_alto," del peso ideal.";
+                                                SiNo
+                                                    Si IMC>29.901 Y IMC &lt= 34.9 Entonces
+                                                        Escribir nombre1," Segun su indice de masa corporal ", IMC," Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad y esta especificamente ", Peso_alto," encima del peso ideal.";
+                                                    SiNo
+                                                        Si IMC >34.901 Entonces
+                                                            Escribir nombre1," Segun su indice de masa corporal ", IMC," Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad o obesidad morbida y esta especificamente ", Peso_Dalto," puntos encima del peso ideal.";
+                                                        FinSi
+                                                    FinSi
+                                                FinSi
+                                            FinSi
+                                            
+                                        FinSi
+                                        
+                                //			Condicional para el segundo consultado
+                                        Si IMC2 >16 Y IMC2 &lt18.4 Entonces
+                                            Escribir nombre2," Segun su indice de masa corporal ",IMC2,"Usted esta por debajo del peso saludable, especificamente ",peso_bajo2," del peso ideal";
+                                        SiNo
+                                            Si IMC2>18.401 Y IMC2&lt=24.9 Entonces
+                                                Escribir nombre2," Segun su indice de masa corporal ", IMC2," Usted se encuentra dentro del rango del peso ideal o normal";
+                                            SiNo
+                                                Si IMC2>24.901 Y IMC2 &lt=29.9 Entonces
+                                                    Escribir nombre2," Segun su indice de masa corporal ", IMC2," Usted esta por encima del peso saludable , especificamente ", Peso_alto2," del peso ideal.";
+                                                SiNo
+                                                    Si IMC2>29.901 Y IMC2 &lt= 34.9 Entonces
+                                                        Escribir nombre2," Segun su indice de masa corporal ", IMC2," Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad y esta especificamente ", Peso_alto2," encima del peso ideal.";
+                                                    SiNo
+                                                        Si IMC2 >34.901 Entonces
+                                                            Escribir nombre2," Segun su indice de masa corporal ", IMC2," Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad o obesidad morbida y esta especificamente ", Peso_Dalto2," puntos encima del peso ideal.";
+                                                        FinSi
+                                                    FinSi
+                                                FinSi
+                                            FinSi
+                                            
+                                        FinSi
+                                //			Condicional para el tercer consultado
+                                        Si IMC3 >16 Y IMC3 &lt18.4 Entonces
+                                            Escribir nombre3," Segun su indice de masa corporal ",IMC3,"Usted esta por debajo del peso saludable, especificamente ",peso_bajo3," del peso ideal";
+                                        SiNo
+                                            Si IMC3>18.401 Y IMC3&lt=24.9 Entonces
+                                                Escribir nombre3," Segun su indice de masa corporal ", IMC3," Usted se encuentra dentro del rango del peso ideal o normal";
+                                            SiNo
+                                                Si IMC3>24.901 Y IMC3 &lt=29.9 Entonces
+                                                    Escribir nombre3," Segun su indice de masa corporal ", IMC3," Usted esta por encima del peso saludable , especificamente ", Peso_alto3," del peso ideal.";
+                                                SiNo
+                                                    Si IMC3>29.901 Y IMC3 &lt= 34.9 Entonces
+                                                        Escribir nombre3," Segun su indice de masa corporal ", IMC3," Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad y esta especificamente ", Peso_alto3," encima del peso ideal.";
+                                                    SiNo
+                                                        Si IMC3 >34.901 Entonces
+                                                            Escribir nombre3," Segun su indice de masa corporal ", IMC3," Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad o obesidad morbida y esta especificamente ", Peso_Dalto3," puntos encima del peso ideal.";
+                                                        FinSi
+                                                    FinSi
+                                                FinSi
+                                            FinSi
+                                            
+                                        FinSi
+                                        
+                                FinSegun
+                                
+                                
+                                FinProceso
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller2_7.png" alt="" width="1100">
+                        </pre>    
+                    </div>
+    
+                    
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    
+                    <button class="acordeon">punto 8 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller2_8
+        
+                                Definir ventas Como Caracter;
+                                Definir Opcion Como Entero;
+                                Definir sabor Como Caracter;
+                                Definir cantidad Como Caracter;
+                                Definir Porciones Como Caracter;
+                                Definir decoracion Como Caracter;
+                                Escribir "Buen dia don CARLOS, ¿que desea realizar el dia hoy?";
+                                Escribir "1. Registrar pedidos";
+                                Escribir "2. Registrar tortas disponibles";
+                                Escribir "3. Registrar venta";
+                                Leer Opcion;
+                                Segun Opcion Hacer
+                                    1:
+                                        Escribir "############ Registrar pedido ############";
+                                        Escribir "Porfavor don carlos digite el sabor que sera la torta";
+                                        Leer sabor;
+                                        Escribir "Porfavor don carlos digite la cantidad que tendra la torta (3/4, 1/4, 1/2 , 1 libra)";
+                                        Leer cantidad;
+                                        Escribir "Ahora don carlos, digite el numero de porciones que tendra la torta";
+                                        Leer Porciones;
+                                        Escribir "Por ultimo don carlos, digite la decoracion (tematica) que tendra la torta";
+                                        Leer decoracion;
+                                        Escribir "########### Registro de torta exitoso ########### ";
+                                        Escribir "Se realizara la torta con las siguientes caracteristicas: ";
+                                        Escribir sabor, " / ",cantidad," / ",Porciones," / ",decoracion;
+                                        
+                                    2:
+                                        Definir disponibles,disponibles_2,disponibles_3,disponibles_4,disponibles_5 Como Caracter;
+                                        Escribir "############ Registrar tortas disponibles ############";
+                                        Escribir "Porfavor don carlos, digite las tortas que tenga disponibles para la venta(maximo 5)";
+                                        Escribir "Torta 1: ";
+                                        Leer disponibles;
+                                        Escribir "Torta 2: ";
+                                        Leer disponibles_2;
+                                        Escribir "Torta 3: ";
+                                        Leer disponibles_3;
+                                        Escribir "Torta 4: ";
+                                        Leer disponibles_4;
+                                        Escribir "Torta 5: ";
+                                        Leer disponibles_5;
+                                        Escribir "Estan disponibles las siguientes tortas: ";
+                                        Escribir "Torta 1: ", disponibles;
+                                        Escribir "Torta 2: ", disponibles_2;
+                                        Escribir "Torta 3: ", disponibles_3;
+                                        Escribir "Torta 4: ", disponibles_4;
+                                        Escribir "Torta 5: ", disponibles_5;
+                                    3:
+                                        Escribir "############ Registrar venta ############";
+                                        Escribir "Porfavor don carlos, digite la ventas del dia.";
+                                        Leer ventas;
+                                        Escribir "Se registran las siguientes ventas del dia: ", ventas;
+                                        
+                                    De Otro Modo:
+                                        Escribir "Seleccion erronea, porfavor reinicie el programa";
+                                        
+                                        
+                                        
+                                FinSegun
+                                
+                                FinProceso
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller2_8.png" alt="" width="700">
+                        </pre>    
+                    </div>
+    
+                    
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    
+                    <button class="acordeon">punto 9 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller2_9
+                                Definir opcion Como Entero;
+                                Definir base,altura ,area_rec Como Real;
+                                Definir area_trapecio,base1,base2 Como Real;
+                                Escribir "##########################Aplicacion para calcular el area de figura geometricas##########################";
+                                Escribir " ";
+                                Escribir "Seleccione la figura a la que le desea hallar el area: ";
+                                Escribir "1.Rectangulo";
+                                Escribir "2.Triangulo ";
+                                Escribir "3.Trapecio ";
+                                Leer opcion;
+                                
+                                Segun opcion Hacer
+                                    1:
+                                        Escribir "####################### Rectangulo #######################";
+                                        Escribir " ";
+                                        Escribir "Para hallar el valor del area del rectangulo, se hace uso de la siguiente formula:"; 
+                                        Escribir "Area rectangulo = Base * Altura";
+                                        Escribir "Entendido esto, hallar el area de un rectangulo";
+                                        Escribir "Escriba el valor de la base: ";
+                                        Leer base;
+                                        Escribir "Escriba el valor de la altura: ";
+                                        Leer altura;
+                                        area_rec &lt- base* altura;
+                                        Escribir " El valor del area del rectangulo es: ", area_rec;
+                                        
+                                        
+                                    2:
+                                        Definir area_triangu Como Real;
+                                        Escribir "####################### Triangulo #######################";
+                                        Escribir " ";
+                                        Escribir "Para hallar el valor del area del Triangulo, se hace uso de la siguiente formula:";
+                                        Escribir "Area triangulo = (Base * Altura)/2";
+                                        Escribir "Entendido esto, hallar el area de un triangulo";
+                                        Escribir "Escriba el valor de la base: ";
+                                        Leer base;
+                                        Escribir "Escriba el valor de la altura: ";
+                                        Leer altura;
+                                        area_triangu &lt- (base* altura)/2;
+                                        Escribir " El valor del area del triangulo es: ", area_triangu;
+                                        
+                                    3:
+                                        
+                                        Escribir "####################### Trapecio #######################";
+                                        Escribir " ";
+                                        Escribir "Para hallar el valor del area del Trapecio, se hace uso de la siguiente formula:";
+                                        Escribir "Area trapecio = ((Base1 + Base2)/2)* h";
+                                        Escribir "Entendido esto, hallar el area de un trapecio";
+                                        Escribir "Escriba el valor de la base 1: ";
+                                        Leer base1;
+                                        Escribir "Escriba el valor de la base 2: ";
+                                        Leer base2;
+                                        Escribir "Escriba el valor de la altura: ";
+                                        Leer altura;
+                                        area_trapecio &lt- ((base1+ base2)/2)*altura;
+                                        Escribir " El valor del area del trapecio es: ", area_trapecio;
+                                        
+                                    De Otro Modo:
+                                        Escribir "Opcion invalida, porfavor reinicie";
+                                        
+                                FinSegun
+                                
+                                FinProceso
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller2_9.png" alt="" width="800">
+                        </pre>    
+                    </div>
+    
+                    
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    
+                    <button class="acordeon">punto 10 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller2_10
+                                Definir usuario Como Caracter;
+                                Definir cantidad Como Real;
+                                Definir opcion Como Entero;
+                                Definir valorr,retiro Como Real;
+                                Escribir "Bienvenido a 	SU BANCO FIEL, porfavor ingrese el nombre del titular: ";
+                                Leer usuario;
+                                Escribir "Digite la cantidad que tiene guardada en su cuenta:";
+                                Leer cantidad;
+                                Escribir "Muchas gracias, porfavor seleccione alguna de las siguientes opciones: ";
+                                Escribir "1.Ingresar dinero";
+                                Escribir "2.Retiros";
+                                Escribir "3.Consultar saldo actual";
+                                Leer opcion;
+                                Segun opcion Hacer
+                                    1:
+                                        Escribir " ########### Ingresar dinero ###########";
+                                        Escribir "Porfavor ingrese el valor que va a depositar, no puede ser un valor negativo";
+                                        Leer valorr;
+                                        Si valorr = 0 Entonces
+                                            Escribir "Opcion invalida, el valor debe ser mayor que 0";
+                                            Escribir "Reinicie el programa";
+                                        SiNo
+                                            cantidad &lt- cantidad + valorr;
+                                            Escribir "Se ha registrado correctamente el valor ingresado, su saldo actual es: ", cantidad;
+                                            Escribir "Que tenga un buen dia";
+                                        FinSi
+                                    2:
+                                        Escribir " ########### Retiros ###########";
+                                        Escribir "Porfavor ingrese el valor que desea retirar";
+                                        Leer retiro;
+                                        Si retiro = 0 Entonces
+                                            Escribir "Opcion invalida, el valor debe ser mayor que 0";
+                                            Escribir "Reinicie el programa";
+                                        SiNo
+                                            cantidad &lt- cantidad - retiro;
+                                            Escribir "Se ha registrado correctamente el valor retirado, su saldo actual es: ", cantidad;
+                                            Escribir "Que tenga un buen dia";
+                                        FinSi
+                                        
+                                    3:
+                                        Escribir " ########### Consultar saldo actual ###########";
+                                        Escribir "Como no se le ha generado ningun cobro y no ha realizado ningun retiro, su saldo actual es: ", cantidad;
+                                        
+                                FinSegun
+                                
+                                
+                                
+                            FinProceso
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller2_10.png" alt="" width="800">
+                        </pre>    
+                    </div>
+    
+                    
+                </fieldset>
+            </div>
+
+            
+
+            
+
+            
+        </article>
+        
+        <article>
+
+
+            <button class="acordeon"><h1 class="pseint">
+                Solucion Java
+            </h1> </button>
+            <div class="panel">
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 1 </button>
+                    <div class="panel">
+                        
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner;
+    
+                                public class Taller2_1 {
+    
+                                    public static void main(String[] args) {
+    
+                                        Scanner dato = new Scanner(System.in);
+                                        int edad = 0;
+    
+                                        System.out.println("Porfavor digite su edad: ");
+                                        edad = dato.nextInt();
+    
+                                        if (edad >= 18){
+                                            System.out.println("Usted es mayor de edad");
+                                        }
+                                    }
+                                    
+                                }
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller2_1_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+                
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 2 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner;
+        
+                                public class Taller2_2 {
+        
+                                    public static void main(String[] args) {
+                                        Scanner dato = new Scanner(System.in);
+                                        int edad = 0;
+        
+                                        System.out.println("Porfavor digite su edad: ");
+                                        edad = dato.nextInt();
+        
+                                        if (edad&lt18){
+                                            System.out.println("Usted es menor de edad, por lo que aun es un niñ@");
+        
+                                        }
+                                    }
+                                    
+                                }
+        
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller2_2_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+    
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 3 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner;
+        
+                                public class Taller2_3 {
+        
+                                    public static void main(String[] args) {
+                                        
+                                        Scanner dato = new Scanner(System.in);
+                                        int edad = 0;
+                                        String nombre = "";
+                                        String apellido = "";
+        
+                                        System.out.println("Porfavor digite su nombre: ");
+                                        nombre = dato.nextLine();
+        
+                                        System.out.println("Porfavor digite su apellido: ");
+                                        apellido = dato.nextLine();
+        
+                                        System.out.println("Porfavor digite su edad: ");
+                                        edad = dato.nextInt();
+        
+                                        if (edad >= 18){
+                                            System.out.println(nombre+" "+ apellido + " usted es mayor de edad por lo tanto, puede ingresar a la fiesta");
+                                        }else {
+                                            System.out.println(nombre+" "+ apellido + " usted es menor de edad por lo tanto, no puede ingresar a la fiesta, porfavor devuelvase a su casa");
+                                        }
+                                    }
+                                }
+        
+        
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller2_3_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 4 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner;
+    
+                                public class Taller2_4 {
+    
+                                    public static void main(String[] args) {
+    
+                                        Scanner dato = new Scanner(System.in);
+                                        Scanner dato2 = new Scanner(System.in);
+                                        int opcion = 0;
+                                        int opcion2 = 0;
+                                        int opcion3 = 0;
+                                        int opcion4 = 0;
+                                        String danos = " ";
+                                        boolean novedad = false;
+    
+    
+                                        System.out.println("Bienvinido a la tienda-video selecciona una opcion para continuar: ");
+                                        System.out.println("1. Alquilar pelicula!");
+                                        System.out.println("2. Consultar peliculas disponibles");
+                                        System.out.println("3. Entregar pelicula");
+                                        System.out.println("4. Salir");
+                                        opcion = dato.nextInt();
+    
+                                        switch (opcion) {
+                                            case 1:{
+                                                System.out.println("########## Alquilar pelicula ##########");
+                                                System.out.println("A continuacion observara las peliculas que estan disponibles: ");
+                                                System.out.println("1. Titanic");
+                                                System.out.println("2. Buscando a nemo");
+                                                System.out.println("3. Los increibles");
+                                                System.out.println("¿Cual desea alquilar?, (Porfavor digite el numero correspondiente de la pelicula)");
+                                                opcion2 = dato.nextInt();
+    
+                                                switch (opcion2) {
+                                                    case 1:{
+                                                        System.out.println("felicidades, ha alquilado la pelicula (Titanic)");
+                                                        
+                                                        break;
+                                                    }
+                                                    case 2:{
+                                                        System.out.println("felicidades, ha alquilado la pelicula (Buscando a nemo)");
+                                                    }
+                                                    case 3:{
+                                                        System.out.println("felicidades, ha alquilado la pelicula (Los increibles)");
+                                                    }
+                                                
+                                                }
+                                                
+                                                break;
+                                            }
+                                            
+                                            case 2:{
+                                                System.out.println("########## Consultar pelicula ##########");
+                                                System.out.println("A continuacion observara las peliculas que estan disponibles: ");
+                                                System.out.println("1. Titanic");
+                                                System.out.println("2. Buscando a nemo");
+                                                System.out.println("3. Los increibles");
+                                                System.out.println("¿Cual desea alquilar?, (Porfavor digite el numero correspondiente de la pelicula)");
+                                                opcion3 = dato.nextInt();
+    
+                                                switch (opcion3) {
+                                                    case 1:{
+                                                        System.out.println("felicidades, ha alquilado la pelicula (Titanic)");
+                                                        
+                                                        break;
+                                                    }
+                                                    case 2:{
+                                                        System.out.println("felicidades, ha alquilado la pelicula (Buscando a nemo)");
+                                                        break;
+                                                    }
+                                                    case 3:{
+                                                        System.out.println("felicidades, ha alquilado la pelicula (Los increibles)");
+                                                        break;
+                                                    }
+                                                
+                                                }
+                                                break;
+                                            }
+    
+                                            case 3:{
+                                                
+    
+                                                System.out.println("########## Consultar pelicula ##########");
+                                                System.out.println("A continuacion digite el numero de la pelicula que va a entregar: ");
+                                                System.out.println("1. Titanic");
+                                                System.out.println("2. Buscando a nemo");
+                                                System.out.println("3. Los increibles");
+                                                opcion4 = dato.nextInt();
+    
+                                                switch (opcion4) {
+                                                    case 1:{
+                                                        System.out.println("¿La pelicula tiene alguna novedad?(true para si, false para no)");
+                                                        novedad = dato.nextBoolean();
+                                                        if (novedad = true){
+                                                            System.out.println("Porfavor digite la novedad que tiene la pelicula: ");
+                                                            danos = dato2.nextLine();
+                                                            System.out.println("Se ha guardado la informacion, la pelicula tiene los siguientes daños: ");
+                                                            System.out.println(danos);
+                                                        }else{
+                                                            System.out.println("Gracias por su entrega");
+                                                        }
+                                                        
+                                                        
+                                                        break;
+                                                    }
+                                                    case 2:{
+                                                        System.out.println("¿La pelicula tiene alguna novedad?(true para si, false para no)");
+                                                        novedad = dato.nextBoolean();
+                                                        if (novedad = true){
+                                                            System.out.println("Porfavor digite la novedad que tiene la pelicula: ");
+                                                            danos = dato2.nextLine();
+                                                            System.out.println("Se ha guardado la informacion, la pelicula tiene los siguientes daños: ");
+                                                            System.out.println(danos);
+                                                        }else{
+                                                            System.out.println("Gracias por su entrega");
+                                                        }
+                                                        break;
+                                                    }
+                                                    case 3:{
+                                                        System.out.println("¿La pelicula tiene alguna novedad?(true para si, false para no)");
+                                                        novedad = dato.nextBoolean();
+                                                        if (novedad = true){
+                                                            System.out.println("Porfavor digite la novedad que tiene la pelicula: ");
+                                                            danos = dato2.nextLine();
+                                                            System.out.println("Se ha guardado la informacion, la pelicula tiene los siguientes daños: ");
+                                                            System.out.println(danos);
+                                                        }else{
+                                                            System.out.println("Gracias por su entrega");
+                                                        }
+                                                        break;
+                                                    }
+                                                
+                                                }
+                                                break;
+                                            
+                                            }
+                                            case 4:{
+                                                System.out.println("Saliendo del programa");
+                                            
+                                                break;
+                                            }
+    
+                                        }
+                                    }
+                                }
+    
+    
+    
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller2_4_java.png" alt="" width="600">
+                        </pre>
+    
+                    </div>
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 5 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner;
+    
+                                public class Taller2_5 {
+    
+                                    public static void main(String[] args) {
+    
+                                        Scanner dato = new Scanner(System.in);
+                                        Scanner dato2 = new Scanner(System.in);
+                                        int opcion = 0;
+                                        int opcion2 = 0;
+                                        int opcion3 = 0;
+                                        int numero = 0;
+                                        String medicamento = "", esperaba = "";
+                                        boolean confirmar = false, confirmar2=false, confirmar3=false;
+    
+    
+                                        System.out.println("Bienvenido a la drogueria MI SALUD, porfavro seleccione alguna de las siguientes opciones: ");
+                                        System.out.println("1.Comprar producto");
+                                        System.out.println("2.Consultar precios");
+                                        System.out.println("3.Devoluciones");
+                                        System.out.println("4. Salir");
+                                        opcion = dato.nextInt();
+    
+                                        switch (opcion) {
+                                            case 1:{
+                                                System.out.println("############# Comprar producto #############");
+                                                System.out.println("Porfavor seleccione algunas de las siguientes categorias: ");
+                                                System.out.println("1.Para aliviar el dolor");
+                                                System.out.println("2.Para la tension");
+                                                System.out.println("3.Para la acidez");
+                                                opcion2 = dato.nextInt();
+    
+                                                switch (opcion2) {
+                                                    case 1:{
+                                                        System.out.println("############# Medicamentos para el dolor #############");
+                                                        System.out.println("A continuacion se muestran los medicamentos disponibles: ");
+                                                        System.out.println("Tabla x12: ");
+                                                        System.out.println("1.Acetaminofen 50mg: Medicamento para el dolor, fiebre, congestion");
+                                                        System.out.println("2.Ibuprofeno 50mg: Medicamento para el dolor, fiebre, dolor corporal");
+                                                        System.out.println("3.Naproxeno 100mg: Medicamento exclusivo para el dolor del cuerpo y congestion");
+                                                        System.out.println("¿Porfavor digite el numero del medicamento que desea comprar: ");
+                                                        numero = dato.nextInt();
+    
+                                                        if (numero == 1){
+                                                            System.out.println("Esta a punto de comprar el medicamento (acetaminofen de 50mg) por 2000 pesos");
+                                                            System.out.println("Esta seguro? (true Para si, false para no)");
+                                                            confirmar = dato.nextBoolean();
+    
+                                                            if (confirmar ==  true){
+    
+                                                                System.out.println("Ha comprado tabla de acetaminofen de 50mg");
+                                                                System.out.println("Gracias por su compra");
+                                                            }else{
+                                                                System.out.println("Regresando al menu");
+                                                            }
+                                                        }else if (numero == 2){
+                                                            System.out.println("Esta a punto de comprar el medicamento (ibuprofeno de 50mg) por 3500 pesos");
+                                                            System.out.println("Esta seguro? (true Para si, false para no)");
+                                                            confirmar2 = dato.nextBoolean();
+    
+                                                            if (confirmar2 ==  true){
+    
+                                                                System.out.println("Ha comprado tabla de ibuprofeno de 50mg");
+                                                                System.out.println("Gracias por su compra");
+                                                            }else{
+                                                                System.out.println("Regresando al menu");
+                                                            }
+    
+                                                        }else if (numero == 3){
+                                                            System.out.println("Esta a punto de comprar el medicamento ( naproxeno de 100mg) por 8000 pesos");
+                                                            System.out.println("Esta seguro? (true Para si, false para no)");
+                                                            confirmar3 = dato.nextBoolean();
+    
+                                                            if (confirmar3 ==  true){
+    
+                                                                System.out.println("Ha comprado tabla de naproxeno de 100mg");
+                                                                System.out.println("Gracias por su compra");
+                                                            }else{
+                                                                System.out.println("Regresando al menu");
+                                                            }
+                                                        }
+    
+                                                        
+                                                        break;
+                                                    }
+                                                    case 2:{
+    
+                                                        System.out.println("############# Medicamentos para la tension #############");
+                                                        System.out.println("A continuacion se muestran los medicamentos disponibles: ");
+                                                        System.out.println("Tabla x12: ");
+                                                        System.out.println("1.Losartan 50mg: Medicamento exclusivo para la hipertension");
+                                                        System.out.println("2.Hygroton 50mg: Medicamento exclusivo para la tension alta");
+                                                        System.out.println("3.Diuril 100mg: Medicamento exclusivo para la tension alta y baja");
+                                                        System.out.println("¿Porfavor digite el numero del medicamento que desea comprar: ");
+                                                        numero = dato.nextInt();
+    
+                                                        if (numero == 1){
+                                                            System.out.println("Esta a punto de comprar el medicamento ( Losartan de 50mg) por 4500 pesos");
+                                                            System.out.println("Esta seguro? (true Para si, false para no)");
+                                                            confirmar = dato.nextBoolean();
+    
+                                                            if (confirmar ==  true){
+    
+                                                                System.out.println("Ha comprado tabla de Losartan de 50mg");
+                                                                System.out.println("Gracias por su compra");
+                                                            }else{
+                                                                System.out.println("Regresando al menu");
+                                                            }
+                                                        }else if (numero == 2){
+                                                            System.out.println("Esta a punto de comprar el medicamento ( Hygroton de 50mg) por 5000 pesos");
+                                                            System.out.println("Esta seguro? (true Para si, false para no)");
+                                                            confirmar2 = dato.nextBoolean();
+    
+                                                            if (confirmar2 ==  true){
+    
+                                                                System.out.println("Ha comprado tabla de Hygroton de 50mg");
+                                                                System.out.println("Gracias por su compra");
+                                                            }else{
+                                                                System.out.println("Regresando al menu");
+                                                            }
+    
+                                                        }else if (numero == 3){
+                                                            System.out.println("Esta a punto de comprar el medicamento ( Diuril de 100mg) por 6000 pesos");
+                                                            System.out.println("Esta seguro? (true Para si, false para no)");
+                                                            confirmar3 = dato.nextBoolean();
+    
+                                                            if (confirmar3 ==  true){
+    
+                                                                System.out.println("Ha comprado tabla de Diuril de 100mg");
+                                                                System.out.println("Gracias por su compra");
+                                                            }else{
+                                                                System.out.println("Regresando al menu");
+                                                            }
+                                                        }
+    
+                                                        break;
+    
+                                                    }
+                                                    case 3:{
+                                                        System.out.println("############# Medicamentos para el acidez #############");
+                                                        System.out.println("A continuacion se muestran los medicamentos disponibles: ");
+                                                        System.out.println("");
+                                                        System.out.println("1.Milanta x500 ml: Medicamento para aliviar al acidez y el reflujo ");
+                                                        System.out.println("2.gabizcon, cajax12 (10 ml): Medicamento para aliviar al acidez y el reflujo ");
+                                                        System.out.println("3.Hiosina 50mg: Medicamento Medicamento para aliviar al acidez, el reflujo, el dolor abdominal y prevenir ulceras.");
+                                                        System.out.println("¿Porfavor digite el numero del medicamento que desea comprar: ");
+                                                        numero = dato.nextInt();
+    
+                                                        if (numero == 1){
+                                                            System.out.println("Esta a punto de comprar el medicamento (Milanta de 500ml) por 23000 pesos");
+                                                            System.out.println("Esta seguro? (true Para si, false para no)");
+                                                            confirmar = dato.nextBoolean();
+    
+                                                            if (confirmar ==  true){
+    
+                                                                System.out.println("Ha comprado tabla de Milanta de 500ml");
+                                                                System.out.println("Gracias por su compra");
+                                                            }else{
+                                                                System.out.println("Regresando al menu");
+                                                            }
+                                                        }else if (numero == 2){
+                                                            System.out.println("Esta a punto de comprar el medicamento (gabizcon,cajax12 (10 ml)) por 25000 pesos");
+                                                            System.out.println("Esta seguro? (true Para si, false para no)");
+                                                            confirmar2 = dato.nextBoolean();
+    
+                                                            if (confirmar2 ==  true){
+    
+                                                                System.out.println("Ha comprado tabla de gabizcon,cajax12 (10 ml)");
+                                                                System.out.println("Gracias por su compra");
+                                                            }else{
+                                                                System.out.println("Regresando al menu");
+                                                            }
+    
+                                                        }else if (numero == 3){
+                                                            System.out.println("Esta a punto de comprar el medicamento (Hiosina de 50mg)) por 8000 pesos");
+                                                            System.out.println("Esta seguro? (true Para si, false para no)");
+                                                            confirmar3 = dato.nextBoolean();
+    
+                                                            if (confirmar3 ==  true){
+    
+                                                                System.out.println("Ha comprado tabla de Hiosina de 50mg");
+                                                                System.out.println("Gracias por su compra");
+                                                            }else{
+                                                                System.out.println("Regresando al menu");
+                                                            }
+                                                        }
+                                                    }
+                                                
+                                                }
+                                                
+                                                break;
+                                            }
+                                            
+                                            case 2:{
+                                                System.out.println("############# Consultar precios #############");
+                                                System.out.println("A continuacion se observa la lista de los productos disponibles: ");
+                                                System.out.println("1.Acetaminofen 50mg: 2000 pesos");
+                                                System.out.println("2.Ibuprofeno 50mg: 3500 pesos");
+                                                System.out.println("3.Naproxeno 100mg: 4500 pesos");
+                                                System.out.println("4.Losartan 50mg: 8000 pesos");
+                                                System.out.println("5.Hygroton 50mg: 5000 pesos");
+                                                System.out.println("6.Diuril 100mg: 6000 pesos");
+                                                System.out.println("7.Milanta x500 ml: 23000 pesos");
+                                                System.out.println("8.gabizcon, cajax12 (10 ml): 25000 pesos ");
+                                                System.out.println("9.Hiosina 50mg: 8000 pesos");
+                                                
+                                                break;
+                                            }
+    
+                                            case 3:{
+                                                
+    
+                                                System.out.println("############# Devoluciones #############");
+                                                System.out.println("Porfavor digite el nombre del medicamento que desea realizar la devolucion");
+                                                medicamento = dato2.nextLine();
+                                                System.out.println("¿Cual es la razon por la que desea realizar la devolucion?");
+                                                System.out.println("1. No era el medicamento esperado.");
+                                                System.out.println("2.El medicamento esta vencido o esta apunto de vencerce.");
+                                                opcion3 = dato.nextInt();
+    
+                                                switch (opcion3) {
+                                                    case 1:{
+                                                        System.out.println("Digite el nombre del medicamento que esperaba: ");
+                                                        esperaba = dato2.nextLine();
+                                                        System.out.println("Se hara el cambio del medicamento: "+medicamento+" Por "+esperaba);
+                                                        System.out.println("Porfavor envie el medicamento a la siguiente direccion: ");
+                                                        System.out.println("Calle xxxxx, numero xxxx");
+                                                        System.out.println("De otro modo, comuniquese al #########");
+                                                        System.out.println("Gracias por su tiempo");
+                                                    
+                                                        break;
+                                                    }
+                                                    case 2:{
+                                                        System.out.println("Porfavor envie el medicamento a la siguiente direccion: ");
+                                                        System.out.println("Calle xxxxx, numero xxxx");
+                                                        System.out.println("De otro modo, comuniquese al #########");
+                                                        System.out.println("Gracias por su tiempo");
+                                                        break;
+                                                    }
+                                                    
+                                                
+                                                }
+                                                break;
+                                            
+                                            }
+                                            case 4:{
+                                                System.out.println("Saliendo del programa");
+                                            
+                                                break;
+                                            }
+    
+                                        }
+                                    }
+                                }
+    
+                                
+    
+    
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller2_5_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 6 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner;
+    
+                                public class Taller2_6 {
+    
+                                    public static void main(String[] args) {
+    
+                                        Scanner dato = new Scanner(System.in);
+                                        Scanner dato2 = new Scanner(System.in);
+                                        Scanner dato3 = new Scanner(System.in);
+                                        int opcion = 0;
+                                        int opcion2 = 0;
+                                        int opcion3 = 0;
+                                        int numero = 0;
+                                        int acuerdo = 0;
+                                        int encuesta = 0;
+                                        String nombre = "", modelo = "",novedad2 = "", servicio = "";
+                                        boolean novedad = false;
+    
+    
+                                        System.out.println("Bienvenido al taller EL MAQUINISTA, porfavor seleccione alguna de las siguientes opciones: ");
+                                        System.out.println("1. Registrar entrada de moto.");
+                                        System.out.println("2. Registrar salida de moto.");
+                                        System.out.println("3. Salir");
+                                        opcion = dato.nextInt();
+    
+                                        switch (opcion) {
+                                            case 1:{
+                                                System.out.println("####################### Registro de entrada #######################");
+                                                System.out.println(" ");
+                                                System.out.println("Bienvenido , a continuacion observara un menu con los servicios que presta el taller, porfavor, seleccione el que necesita.");
+                                                System.out.println("1. Matenimiento");
+                                                System.out.println("2. Lavado total");
+                                                System.out.println("3. Salir");
+                                                opcion2 = dato.nextInt();
+    
+                                                switch (opcion2) {
+    
+                                                    case 1:{
+                                                        System.out.println(" ");
+                                                        System.out.println("######### Mantenimiento #########");
+                                                        System.out.println("Porfavor digite su nombre completo: ");
+                                                        nombre = dato2.nextLine();
+                                                        System.out.println("Porfavor digite el modelo de su moto: ");
+                                                        modelo = dato2.nextLine();
+                                                        System.out.println("Tiene alguna novedad que desee exponerele al mecanico? ");
+                                                        System.out.println("Si es asi, digite true, si no, false");
+                                                        novedad = dato2.nextBoolean();
+    
+                                                        if (novedad == true){
+    
+                                                            System.out.println("¿Cual es la novedad?, porfavor digitela");
+                                                            novedad2 = dato3.nextLine();
+                                                            System.out.println("se ha registrado la sigiente informacion: ");
+                                                            System.out.println(" ");
+                                                            System.out.println("Usuario: "+ nombre);
+                                                            System.out.println("Modelo de la moto: " + modelo);
+                                                            System.out.println("Novedad: " + novedad2);
+                                                            System.out.println(" ");
+                                                            System.out.println("El servicio de mantenimineto tiene un cobro de #### pesos, ¿esta de acuerdo?");
+                                                            System.out.println("1.Si");
+                                                            System.out.println("2.No");
+                                                            acuerdo = dato3.nextInt();
+                                                            if (acuerdo == 1){
+    
+                                                                System.out.println("Gracias por su compra, porfavor digite su numero de contacto para que el mecanico se comunique con usted una vez este lista su moto: ");
+                                                                numero = dato.nextInt();
+                                                                System.out.println("El mecanico se comunicara con usted por el siguiente numero de contacto: " + numero);
+                                                            }else if(acuerdo == 2){
+                                                                System.out.println("Gracias por su tiempo, que tenga un buen dia.");
+                                                            }else{
+                                                                System.out.println("Opcion invalida");
+                                                            }
+                                                        }else if (novedad == false){
+                                                            System.out.println("se ha registrado la sigiente informacion: ");
+                                                            System.out.println("Usuario: " + nombre);
+                                                            System.out.println("Modelo de la moto: " + modelo);
+                                                            System.out.println("novedad: no presenta");
+                                                            System.out.println("");
+                                                            System.out.println("El servicio de mantenimiento tiene un cobro de #### pesos, ¿esta de acuerdo?");
+                                                            System.out.println("1.Si");
+                                                            System.out.println("2.No");
+                                                            acuerdo = dato.nextInt();
+    
+                                                            if (acuerdo == 1){
+    
+                                                                System.out.println("Gracias por su compra, porfavor digite su numero de contacto para que el mecanico se comunique con usted una vez este lista su moto: ");
+                                                                numero = dato.nextInt();
+                                                                System.out.println("El mecanico se comunicara con usted por el siguiente numero de contacto: "+numero);
+                                                            }else if(acuerdo == 2){
+                                                                System.out.println("Gracias por su tiempo, que tenga un buen dia.");
+                                                            }else{
+                                                                System.out.println("Opcion invalida");
+                                                            }
+                                                        }
+                                                        
+                                                        break;
+                                                    }
+                                                    case 2:{
+    
+                                                        System.out.println("######### Lavado total #########");
+                                                        System.out.println("El servicio de lavado, cuenta con la la impieza total de la moto, incluyendo llanta, rines y tecnologia.");
+                                                        System.out.println("");
+                                                        System.out.println("Porfavor digite su nombre completo: ");
+                                                        nombre = dato.nextLine();
+                                                        System.out.println("Porfavor digite el modelo de su moto: ");
+                                                        modelo = dato.nextLine();
+                                                        System.out.println("Tiene alguna novenad que desee exponerele al mecanico? ");
+                                                        System.out.println("Si es asi, digite 1, si no, oprima 0");
+                                                        novedad = dato.nextBoolean();
+    
+                                                        if (novedad == true){
+                                                            System.out.println("¿Cual es la novedad?, porfavor digitela");
+                                                            novedad2 = dato.nextLine();
+                                                            System.out.println("se ha registrado la sigiente informacion: ");
+                                                            System.out.println("Usuario: "+nombre);
+                                                            System.out.println("se ha registrado la sigiente informacion: "+modelo);
+                                                            System.out.println("se ha registrado la sigiente informacion: "+novedad2);
+                                                            System.out.println("");
+                                                            System.out.println("El servicio de lavado tiene un cobro de #### pesos, ¿esta de acuerdo?");
+                                                            System.out.println("1.Si");
+                                                            System.out.println("2.No");
+                                                            acuerdo = dato.nextInt();
+    
+                                                            if (acuerdo == 1){
+    
+                                                                System.out.println("Gracias por su compra, porfavor digite su numero de contacto para que el mecanico se comunique con usted una vez este lista su moto: ");
+                                                                numero = dato.nextInt();
+                                                                System.out.println("El mecanico se comunicara con usted por el siguiente numero de contacto: "+numero);
+                                                            }else if(acuerdo == 2){
+                                                                System.out.println("Gracias por su tiempo, que tenga un buen dia.");
+                                                            }else{
+                                                                System.out.println("Opcion invalida");
+                                                            }
+                                                        }else if (novedad == false){
+                                                            System.out.println("se ha registrado la sigiente informacion: ");
+                                                            System.out.println("Usuario: "+nombre);
+                                                            System.out.println("se ha registrado la sigiente informacion: "+modelo);
+                                                            System.out.println("se ha registrado la sigiente informacion: "+novedad2);
+                                                            System.out.println("");
+                                                            System.out.println("El servicio de lavado tiene un cobro de #### pesos, ¿esta de acuerdo?");
+                                                            System.out.println("1.Si");
+                                                            System.out.println("2.No");
+                                                            acuerdo = dato.nextInt();
+    
+                                                            if (acuerdo == 1){
+    
+                                                                System.out.println("Gracias por su compra, porfavor digite su numero de contacto para que el mecanico se comunique con usted una vez este lista su moto: ");
+                                                                numero = dato.nextInt();
+                                                                System.out.println("El mecanico se comunicara con usted por el siguiente numero de contacto: "+numero);
+                                                            }else if(acuerdo == 2){
+                                                                System.out.println("Gracias por su tiempo, que tenga un buen dia.");
+                                                            }else{
+                                                                System.out.println("Opcion invalida");
+                                                            }
+                                                        }
+                                                        break;
+                                                    }
+                                                    
+                                                }
+                                                
+                                                break;
+                                            }
+                                            
+                                            case 2:{
+                                                System.out.println("####################### Registro de salida #######################");
+                                                System.out.println("Porfavor digite su nombre completo");
+                                                nombre = dato2.nextLine();
+                                                System.out.println("Porfavor digite el modelo de su vehiculo");
+                                                modelo = dato2.nextLine();
+                                                System.out.println("Digite el servicio que ha recibido:");
+                                                System.out.println("1.Mantenimiento");
+                                                System.out.println("2.Lavado total");
+                                                System.out.println("3.Ninguno");
+                                                opcion3 = dato2.nextInt();
+                                                
+                                                switch (opcion3) {
+                                                    case 1:{
+                                                        System.out.println("¿Que tal le ha parecido el serivico?");
+                                                        System.out.println("1.Excelente");
+                                                        System.out.println("2.Malo");
+                                                        encuesta = dato2.nextInt();
+    
+                                                        if (encuesta==1){
+                                                            System.out.println("Nos hace muy feliz saber que tuvo un excelente servicio, gracias por preferirnos, que tenga un excelente dia");
+                                                        }else if (encuesta == 2){
+                                                            System.out.println("¿Cual es el motivo por el que siente haber tenido un mal serivicio?: ");
+                                                            servicio = dato3.nextLine();
+                                                            System.out.println("Su informacion es vital para poder mejorar nuestros serivicos, le agradecemos por su paciencia");
+                                                            System.out.println("Se ha guardado la siguiente informacion: "+servicio);
+                                                            System.out.println("Le pedimos disculpas por no haber tenido un buen servicio, que tenga un excelente dia.");
+                                                        }
+                                                        
+                                                        break;
+                                                    }
+                                                    case 2:{
+                                                        System.out.println("¿Que tal le ha parecido el serivico?");
+                                                        System.out.println("1.Excelente");
+                                                        System.out.println("2.Malo");
+                                                        encuesta = dato2.nextInt();
+    
+                                                        if (encuesta==1){
+                                                            System.out.println("Nos hace muy feliz saber que tuvo un excelente servicio, gracias por preferirnos, que tenga un excelente dia");
+                                                        }else if (encuesta == 2){
+                                                            System.out.println("¿Cual es el motivo por el que siente haber tenido un mal serivicio?: ");
+                                                            servicio = dato3.nextLine();
+                                                            System.out.println("Su informacion es vital para poder mejorar nuestros serivicos, le agradecemos por su paciencia");
+                                                            System.out.println("Se ha guardado la siguiente informacion: "+servicio);
+                                                            System.out.println("Le pedimos disculpas por no haber tenido un buen servicio, que tenga un excelente dia.");
+                                                        }
+                                                        
+                                                        break;
+    
+                                                    }
+                                                    case 3:{
+                                                        System.out.println("Opcion invalida");
+                                                        
+                                                    }
+                                                        
+                                                }
+                                                
+                                                
+                                                break;
+                                            }
+    
+                                            case 3:{
+                                                
+                                                System.out.println("Saliendo del programa");
+                                            
+                                                break;
+                                                
+                                            
+                                            }
+    
+                                        }
+                                    }
+                                }
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller2_6_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 7 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner;
+    
+                                public class Taller2_7 {
+    
+                                    public static void main(String[] args) {
+    
+                                        Scanner dato = new Scanner(System.in);
+                                        Scanner dato2 = new Scanner(System.in);
+                                        double peso_bajo = 0, peso_alto = 0, peso_malto = 0, peso_dalto = 0;
+                                        double peso_bajo2 = 0, peso_alto2 = 0, peso_malto2 = 0, peso_dalto2 = 0;
+                                        double peso_bajo3 = 0, peso_alto3 = 0, peso_malto3 = 0, peso_dalto3 = 0;
+                                        int numero_per = 0;
+                                        double peso = 0,peso2 = 0,peso3 = 0;
+                                        double estatura = 0,estatura2 = 0,estatura3 = 0;
+                                        double IMC = 0, IMC2=0, IMC3 = 0;
+    
+                                        String nombre = "", nombre2 = "",nombre3 = "";
+    
+                                        System.out.println(" ");
+                                        System.out.println("Aplicacion para calcular el indice de masa corporal (IMC).");
+                                        System.out.println(" ");
+                                        System.out.println("Porfavor digite el numero de personas que haran la encuesta: ");
+                                        numero_per = dato.nextInt();
+    
+                                        switch (numero_per) {
+                                            case 1:{
+                                                System.out.println("####################### Registro de usuario #######################");
+                                                System.out.println(" ");
+                                                System.out.println("Porfavor digite el nombre completo");
+                                                nombre = dato2.nextLine();
+                                                System.out.println("Digite el peso exacto (En kilogramos, utilice coma si es un decimal) ");
+                                                peso = dato2.nextDouble();
+                                                System.out.println("Digite la estatura (En Metros, utilice coma si es un decimal) ");
+                                                estatura = dato2.nextDouble();
+                                                IMC = peso/Math.pow(estatura,2);
+                                                peso_bajo = 24.9 - IMC;
+                                                peso_alto = IMC - 24.9;
+                                                peso_malto = IMC - 24.9;
+                                                peso_dalto = (34.9-IMC)*(-1);
+                                                
+                                                if (IMC > 16 && IMC&lt18.4){
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted esta por debajo del peso saludable, especificamente "+peso_bajo+" puntos del peso ideal");
+    
+                                                }else if (IMC > 18.401 && IMC&lt=24.9){
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted se encuentra dentro del rango del peso ideal o normal ");
+                                                }else if (IMC > 24.901 && IMC&lt=29.9){
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted esta por encima del peso saludable , especificamente "+peso_alto+" puntos del peso ideal");
+                                                }else if (IMC > 29.901 && IMC&lt=34.9){
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad y esta especificamente  "+ peso_malto +" puntos encima del peso ideal.");
+                                                }else if(IMC > 34.901){
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad o obesidad morbida y esta especificamente "+ peso_dalto +" puntos encima del peso ideal.");
+                                                }
+                                                break;
+    
+                                            }
+                                                
+                                            case 2:{
+                                                System.out.println("####################### Registro de usuario #######################");
+                                                System.out.println(" ");
+                                                System.out.println("Porfavor digite el nombre completo de la PRIMERA persona: ");
+                                                System.out.println(" ");
+                                                nombre = dato2.nextLine();
+                                                System.out.println("Porfavor digite el nombre completo de la SEGUNDA persona: ");
+                                                System.out.println(" ");
+                                                nombre2 = dato2.nextLine();
+                                                System.out.println("Digite el peso exacto (En kilogramos, utilice coma si es un decimal) de la PRIMERA persona");
+                                                System.out.println(" ");
+                                                peso = dato2.nextDouble();
+                                                System.out.println("Digite el peso exacto (En kilogramos, utilice coma si es un decimal) de la SEGUNDA persona");
+                                                System.out.println(" ");
+                                                peso2 = dato2.nextDouble();
+                                                System.out.println("Digite la estatura (En Metros, utilice coma si es un decimal) de la PRIMERA persona ");
+                                                System.out.println(" ");
+                                                estatura = dato2.nextDouble();
+                                                System.out.println("Digite la estatura (En Metros, utilice coma si es un decimal) de la SEGUNDA persona ");
+                                                System.out.println(" ");
+                                                estatura2 = dato2.nextDouble();
+                                                IMC = peso/Math.pow(estatura,2);
+                                                IMC2 = peso2/Math.pow(estatura2,2);
+    
+                                                peso_bajo = 24.9 - IMC;
+                                                peso_alto = IMC - 24.9;
+                                                peso_malto = IMC - 24.9;
+                                                peso_dalto = (34.9-IMC)*(-1);
+    
+                                                peso_bajo2 = 24.9 - IMC2;
+                                                peso_alto2 = IMC2 - 24.9;
+                                                peso_malto2 = IMC2 - 24.9;
+                                                peso_dalto2 = (34.9-IMC2)*(-1);
+                                                
+                                                if ((IMC > 16 && IMC &lt= 18.4)){
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted esta por debajo del peso saludable, especificamente "+peso_bajo+" puntos del peso ideal");
+                                                }else if ((IMC > 18.401 && IMC &lt=24.9)){
+                                                    
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted se encuentra dentro del rango del peso ideal o normal "); 
+                                                }else if ((IMC > 24.901 && IMC&lt=29.9)){
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted esta por encima del peso saludable , especificamente "+peso_alto+" puntos del peso ideal");
+                                                }else if (IMC > 29.901 && IMC&lt=34.9){
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad y esta especificamente  "+ peso_malto +" puntos encima del peso ideal.");
+                                                }else if(IMC > 34.901){
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad o obesidad morbida y esta especificamente "+ peso_dalto +" puntos encima del peso ideal.");
+                                                }
+    
+                                                if (IMC2>16 && IMC2&lt18.4 ){
+                                                    System.out.println(nombre2+" Segun su indice de masa corporal "+ IMC2 + " Usted esta por debajo del peso saludable, especificamente "+peso_bajo2+" puntos del peso ideal");
+    
+                                                }else if(IMC2 > 18.401 && IMC2 &lt=24.9) {
+                                                    System.out.println(nombre2+" Segun su indice de masa corporal "+ IMC2 + " Usted se encuentra dentro del rango del peso ideal o normal ");
+                                                }else if(IMC2 > 24.901 && IMC2 &lt= 29.9){
+                                                    System.out.println(nombre2+" Segun su indice de masa corporal "+ IMC2 + " Usted esta por encima del peso saludable , especificamente "+peso_alto2 +" puntos del peso ideal");
+                                                }else if(IMC2 > 29.901 && IMC2&lt=34.9){
+                                                    System.out.println(nombre2+" Segun su indice de masa corporal "+ IMC2 + " Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad y esta especificamente  "+ peso_malto2 +" puntos encima del peso ideal.");
+                                                }else if (IMC2 > 34.901){
+                                                    System.out.println(nombre2+" Segun su indice de masa corporal "+ IMC2 + " Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad o obesidad morbida y esta especificamente "+ peso_dalto2 +" puntos encima del peso ideal.");
+                                                }
+                                                break;
+    
+                                            }
+    
+                                            case 3:{
+                                                
+                                                System.out.println("####################### Registro de usuario #######################");
+                                                System.out.println(" ");
+                                                System.out.println("Porfavor digite el nombre completo de la PRIMERA persona: ");
+                                                nombre = dato2.nextLine();
+                                                System.out.println("Porfavor digite el nombre completo de la SEGUNDA persona: ");
+                                                nombre2 = dato2.nextLine();
+                                                System.out.println("Porfavor digite el nombre completo de la TERCERA persona: ");
+                                                nombre3 = dato2.nextLine();
+                                                System.out.println("Digite el peso exacto (En kilogramos, utilice coma si es un decimal) de la PRIMERA persona");
+                                                peso = dato2.nextDouble();
+                                                System.out.println("Digite el peso exacto (En kilogramos, utilice coma si es un decimal) de la SEGUNDA persona");
+                                                peso2 = dato2.nextDouble();
+                                                System.out.println("Digite el peso exacto (En kilogramos, utilice coma si es un decimal) de la TERCERA persona");
+                                                peso3 = dato2.nextDouble();
+                                                System.out.println("Digite la estatura (En Metros, utilice coma si es un decimal) de la PRIMERA persona ");
+                                                estatura = dato2.nextDouble();
+                                                System.out.println("Digite la estatura (En Metros, utilice coma si es un decimal) de la SEGUNDA persona ");
+                                                estatura2 = dato2.nextDouble();
+                                                System.out.println("Digite la estatura (En Metros, utilice coma si es un decimal) de la TERCERA persona ");
+                                                estatura3 = dato2.nextDouble();
+    
+                                                IMC = peso/Math.pow(estatura,2);
+                                                IMC2 = peso2/Math.pow(estatura2,2);
+                                                IMC3 = peso3/Math.pow(estatura3,2);
+    
+                                                peso_bajo = 24.9 - IMC;
+                                                peso_alto = IMC - 24.9;
+                                                peso_malto = IMC - 24.9;
+                                                peso_dalto = (34.9-IMC)*(-1);
+    
+                                                peso_bajo2 = 24.9 - IMC2;
+                                                peso_alto2 = IMC2 - 24.9;
+                                                peso_malto2 = IMC2 - 24.9;
+                                                peso_dalto2 = (34.9-IMC2)*(-1);
+    
+                                                peso_bajo3 = 24.9 - IMC3;
+                                                peso_alto3 = IMC3 - 24.9;
+                                                peso_malto3 = IMC3 - 24.9;
+                                                peso_dalto3 = (34.9-IMC3)*(-1);
+                                                
+                                                if ((IMC > 16 && IMC &lt= 18.4)){
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted esta por debajo del peso saludable, especificamente "+peso_bajo+" puntos del peso ideal");
+                                                }else if ((IMC > 18.401 && IMC &lt=24.9)){
+                                                    
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted se encuentra dentro del rango del peso ideal o normal "); 
+                                                }else if ((IMC > 24.901 && IMC&lt=29.9)){
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted esta por encima del peso saludable , especificamente "+peso_alto+" puntos del peso ideal");
+                                                }else if (IMC > 29.901 && IMC&lt=34.9){
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad y esta especificamente  "+ peso_malto +" puntos encima del peso ideal.");
+                                                }else if(IMC > 34.901){
+                                                    System.out.println(nombre+" Segun su indice de masa corporal "+ IMC + " Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad o obesidad morbida y esta especificamente "+ peso_dalto +" puntos encima del peso ideal.");
+                                                }
+    
+                                                if (IMC2>16 && IMC2&lt18.4 ){
+                                                    System.out.println(nombre2+" Segun su indice de masa corporal "+ IMC2 + " Usted esta por debajo del peso saludable, especificamente "+peso_bajo2+" puntos del peso ideal");
+    
+                                                }else if(IMC2 > 18.401 && IMC2 &lt=24.9) {
+                                                    System.out.println(nombre2+" Segun su indice de masa corporal "+ IMC2 + " Usted se encuentra dentro del rango del peso ideal o normal ");
+                                                }else if(IMC2 > 24.901 && IMC2 &lt= 29.9){
+                                                    System.out.println(nombre2+" Segun su indice de masa corporal "+ IMC2 + " Usted esta por encima del peso saludable , especificamente "+peso_alto2 +" puntos del peso ideal");
+                                                }else if(IMC2 > 29.901 && IMC2&lt=34.9){
+                                                    System.out.println(nombre2+" Segun su indice de masa corporal "+ IMC2 + " Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad y esta especificamente  "+ peso_malto2 +" puntos encima del peso ideal.");
+                                                }else if (IMC2 > 34.901){
+                                                    System.out.println(nombre2+" Segun su indice de masa corporal "+ IMC2 + " Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad o obesidad morbida y esta especificamente "+ peso_dalto2 +" puntos encima del peso ideal.");
+                                                }
+    
+    
+                                                if (IMC3>16 && IMC3&lt18.4 ){
+                                                    System.out.println(nombre3+" Segun su indice de masa corporal "+ IMC3 + " Usted esta por debajo del peso saludable, especificamente "+peso_bajo3+" puntos del peso ideal");
+    
+                                                }else if(IMC3 > 18.401 && IMC3 &lt=24.9) {
+                                                    System.out.println(nombre3+" Segun su indice de masa corporal "+ IMC3 + " Usted se encuentra dentro del rango del peso ideal o normal ");
+                                                }else if(IMC3 > 24.901 && IMC3 &lt= 29.9){
+                                                    System.out.println(nombre3+" Segun su indice de masa corporal "+ IMC3 + " Usted esta por encima del peso saludable , especificamente "+peso_alto3 +" puntos del peso ideal");
+                                                }else if(IMC3 > 29.901 && IMC3&lt=34.9){
+                                                    System.out.println(nombre3+" Segun su indice de masa corporal "+ IMC3 + " Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad y esta especificamente  "+ peso_malto3 +" puntos encima del peso ideal.");
+                                                }else if (IMC3 > 34.901){
+                                                    System.out.println(nombre3+" Segun su indice de masa corporal "+ IMC3 + " Usted esta por encima del SOBRE PESO, lo que significa que se encuentra en estado de obesidad o obesidad morbida y esta especificamente "+ peso_dalto3 +" puntos encima del peso ideal.");
+                                                }
+                                            
+                                                break;
+                                            }
+    
+                                            
+                                        }
+                                    }
+                                }
+    
+                                
+    
+    
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller2_7_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 8 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner;
+    
+                                public class Taller2_8 {
+    
+                                    public static void main(String[] args) {
+    
+                                        Scanner dato = new Scanner(System.in);
+                                        Scanner dato2 = new Scanner(System.in);
+                                        Scanner dato3 = new Scanner(System.in);
+                                        int opcion = 0;
+                                        double porcion = 0;
+                                        String disponible1= "", disponible2= "", disponible3= "",disponible4= "",disponible5= "", ventas = "";
+                                        String sabor = "", cantidad = "", decoracion = "";
+    
+                                        System.out.println(" ");
+                                        System.out.println("Buen dia don CARLOS, ¿que desea realizar el dia hoy?");
+                                        System.out.println(" ");
+                                        System.out.println("1. Registrar pedidos");
+                                        System.out.println("2. Registrar tortas disponibles");
+                                        System.out.println("3. Registrar venta");
+                                        System.out.println("4. Salir");
+                                        opcion = dato.nextInt();
+    
+                                        switch (opcion) {
+                                            case 1:{
+                                                System.out.println("############ Registrar pedido ############");
+                                                System.out.println(" ");
+                                                System.out.println("Porfavor don carlos digite el sabor que sera la torta");
+                                                sabor = dato2.nextLine();
+                                                System.out.println("Porfavor don carlos digite la cantidad que tendra la torta (3/4, 1/4, 1/2 , 1 libra)");
+                                                cantidad = dato2.nextLine();
+                                                System.out.println("Ahora don carlos, digite el numero de porciones que tendra la torta");
+                                                porcion = dato2.nextDouble();
+                                                System.out.println("Por ultimo don carlos, digite la decoracion (tematica) que tendra la torta");
+                                                decoracion = dato3.nextLine();
+                                                System.out.println("");
+                                                System.out.println("########### Registro de torta exitoso ########### ");
+                                                System.out.println("");
+                                                System.out.println("Se realizara la torta con las siguientes caracteristicas: ");
+                                                System.out.println("");
+                                                System.out.println("Sabor: "+ sabor);
+                                                System.out.println("Cantidad: "+ cantidad);
+                                                System.out.println("Porciones: "+ porcion);
+                                                System.out.println("Decoracion: "+ decoracion);
+                                                
+                                                break;
+    
+                                            }
+                                                
+                                            case 2:{
+                                                System.out.println("############ Registrar tortas disponibles ############");
+                                                System.out.println(" ");
+                                                System.out.println("Porfavor don carlos, digite las tortas que tenga disponibles para la venta(maximo 5)");
+                                                System.out.println("Torta 1:  ");
+                                                disponible1 = dato3.nextLine();
+                                                System.out.println("Torta 2:   ");
+                                                disponible2 = dato3.nextLine();
+                                                System.out.println("Torta 3:   ");
+                                                disponible3 = dato3.nextLine();
+                                                System.out.println("Torta 4:   ");
+                                                disponible4 = dato3.nextLine();
+                                                System.out.println("Torta 5:   ");
+                                                disponible5 = dato3.nextLine();
+                                                System.out.println(" ");
+                                                System.out.println("Estan disponibles las siguientes tortas:  ");
+                                                System.out.println("Torta 1: " + disponible1);
+                                                System.out.println("Torta 2: " + disponible2);
+                                                System.out.println("Torta 3: " + disponible3);
+                                                System.out.println("Torta 4: " + disponible4);
+                                                System.out.println("Torta 5: " + disponible5);
+                                                break;
+    
+                                            }
+    
+                                            case 3:{
+                                                
+                                                System.out.println("############ Registrar venta ############");
+                                                System.out.println("Porfavor don carlos, digite la ventas del dia.");
+                                                ventas = dato3.nextLine();
+                                                System.out.println("Se registran las siguientes ventas del dia: " + ventas);
+                                                break;
+                                            }
+                                            default:{
+                                                System.out.println("Seleccion erronea, porfavor reinicie el programa");
+                                            }
+                                        
+                                            
+                                        }
+                                    }
+                                }
+    
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller2_8_java.png" alt="" width="600">
+                        </pre>
+    
+                    </div>
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 9 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner;
+    
+                                public class Taller2_9 {
+    
+                                    public static void main(String[] args) {
+    
+                                        Scanner dato = new Scanner(System.in);
+                                        Scanner dato3 = new Scanner(System.in);
+                                        int opcion = 0;
+                                        double base = 0, altura = 0,base2 = 0;
+                                        double area_Rec,area_Trian;
+                                    
+                                    
+    
+                                        System.out.println(" ");
+                                        System.out.println("########################## Aplicacion para calcular el area de figura geometricas ##########################");
+                                        System.out.println(" ");
+                                        System.out.println("Seleccione la figura a la que le desea hallar el area: ");
+                                        System.out.println("1.Rectangulo");
+                                        System.out.println("2.Triangulo ");
+                                        System.out.println("3.Trapecio ");
+                                        System.out.println("4.Salir ");
+                                        opcion = dato.nextInt();
+    
+                                        switch (opcion) {
+                                            case 1:{
+                                                System.out.println("####################### Rectangulo #######################");
+                                                System.out.println(" ");
+                                                System.out.println("Para hallar el valor del area del rectangulo, se hace uso de la siguiente formula:");
+                                                System.out.println("");
+                                                System.out.println("Area rectangulo = Base * Altura");
+                                                System.out.println("");
+                                                System.out.println("Entendido esto, hallar el area de un rectangulo");
+                                                System.out.println("");
+                                                System.out.println("Escriba el valor de la base: ");
+                                                base = dato3.nextDouble();
+                                                System.out.println("Escriba el valor de la altura: ");
+                                                System.out.println("");
+                                                altura = dato3.nextDouble();
+                                                area_Rec = base*altura;
+                                                System.out.println("");
+                                                System.out.println("El valor del area del rectangulo es: " + area_Rec);
+    
+    
+                                                
+                                                break;
+    
+                                            }
+                                                
+                                            case 2:{
+    
+                                                System.out.println("####################### Triangulo #######################");
+                                                System.out.println(" ");
+                                                System.out.println("Para hallar el valor del area del Triangulo, se hace uso de la siguiente formula:");
+                                                System.out.println("");
+                                                System.out.println("Area triangulo = (Base * Altura)/2");
+                                                System.out.println("");
+                                                System.out.println("Entendido esto, hallar el area de un rectangulo");
+                                                System.out.println("");
+                                                System.out.println("Escriba el valor de la base: ");
+                                                base = dato3.nextDouble();
+                                                System.out.println("");
+                                                System.out.println("Escriba el valor de la altura: ");
+                                                System.out.println("");
+                                                altura = dato3.nextDouble();
+                                                area_Trian = (base*altura)/2;
+                                                System.out.println("");
+                                                System.out.println("El valor del area del triangulo es: " + area_Trian);
+                                                
+                                                break;
+    
+                                            }
+    
+                                            case 3:{
+                                                
+                                                System.out.println("####################### Trapecio #######################");
+                                                System.out.println(" ");
+                                                System.out.println("Para hallar el valor del area del Trapecio, se hace uso de la siguiente formula:");
+                                                System.out.println("");
+                                                System.out.println("Area trapecio = ((Base1 + Base2)/2)* h");
+                                                System.out.println("");
+                                                System.out.println("Entendido esto, hallar el area de un trapecio");
+                                                System.out.println("");
+                                                System.out.println("Escriba el valor de la base: ");
+                                                base = dato3.nextDouble();
+                                                System.out.println("");
+                                                System.out.println("Escriba el valor de la base2: ");
+                                                base2 = dato3.nextDouble();
+                                                System.out.println("Escriba el valor de la altura: ");
+                                                System.out.println("");
+                                                altura = dato3.nextDouble();
+                                                area_Trian = ((base+base2)/2)*altura;
+                                                System.out.println("");
+                                                System.out.println("El valor del area del triangulo es: " + area_Trian);
+                                                
+                                                break;
+                                            }
+                                            default:{
+                                                System.out.println("Opcion invalida, porfavor reinicie");
+                                            }
+                                        
+                                            
+                                        }
+                                    }
+                                }
+    
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller2_9_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 10 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner;
+    
+                                public class Taller2_10 {
+    
+                                    public static void main(String[] args) {
+    
+                                        Scanner dato = new Scanner(System.in);
+                                        Scanner dato3 = new Scanner(System.in);
+                                        int opcion = 0;
+                                        double cantidad = 0, valor  = 0, retiro = 0;
+                                        String usuario = "";
+                                    
+                                    
+    
+                                        System.out.println(" ");
+                                        System.out.println("Bienvenido a SU BANCO FIEL, porfavor ingrese el nombre del titular: ");
+                                        System.out.println(" ");
+                                        usuario = dato.nextLine();
+                                        System.out.println("Digite la cantidad que tiene guardada en su cuenta:");
+                                        cantidad = dato.nextDouble();
+                                        System.out.println(" ");
+                                        System.out.println("Muchas gracias, porfavor seleccione alguna de las siguientes opciones: ");
+                                        System.out.println("1.Ingresar dinero");
+                                        System.out.println("2.Retiros");
+                                        System.out.println("3.Consultar saldo actual");
+                                        System.out.println("4.Salir");
+                                        opcion = dato.nextInt();
+    
+                                        switch (opcion) {
+                                            case 1:{
+                                                System.out.println("########### Ingresar dinero ###########");
+                                                System.out.println(" ");
+                                                System.out.println("Porfavor ingrese el valor que va a depositar, no puede ser un valor negativo");
+                                                System.out.println("");
+                                                valor = dato3.nextDouble();
+                                                
+                                                if (valor == 0){
+                                                    System.out.println("Opcion invalida, el valor debe ser mayor que 0");
+                                                    System.out.println(" ");
+                                                }else if (valor >0){
+                                                    cantidad = cantidad + valor;
+                                                    System.out.println("Se ha registrado correctamente el valor ingresado, su saldo actual es: " + cantidad);
+                                                    System.out.println("Que tenga un buen dia ");
+                                                }else{
+                                                    System.out.println("Opcion invalida, el valor debe ser mayor que 0");
+                                                }
+    
+    
+                                                
+                                                break;
+    
+                                            }
+                                                
+                                            case 2:{
+    
+                                                System.out.println("########### Retiros ###########");
+                                                System.out.println("Porfavor ingrese el valor que desea retirar");
+                                                retiro = dato.nextDouble();
+    
+                                                if (retiro == 0){
+                                                    System.out.println("Opcion invalida, el valor debe ser mayor que 0");
+                                                    System.out.println(" ");
+                                                }else if (retiro>0){
+                                                    cantidad = cantidad -retiro;
+                                                    System.out.println("Se ha registrado correctamente el valor retirado, su saldo actual es: " + cantidad);
+                                                    System.out.println("Que tenga un buen dia ");
+                                                }else{
+                                                    System.out.println("Opcion invalida, el valor debe ser mayor que 0");
+                                                }
+                                                    
+                                                
+                                                break;
+    
+                                            }
+    
+                                            case 3:{
+                                                
+                                                System.out.println("########### Consultar saldo actual ###########");
+                                                System.out.println("Como no se le ha generado ningun cobro y no ha realizado ningun retiro, su saldo actual es: "+ cantidad);
+                                                
+                                                break;
+                                            }
+                                            default:{
+                                                System.out.println("Saliendo del programa");
+                                            }
+                                        
+                                            
+                                        }
+                                    }
+                                }
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller2_10_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                </fieldset>
+            </div>
+
+            
+
+        </article>
+
+        <nav>
+            <a href="talleres.html">Menu principal</a>
+        </nav>
+
+        
+
+    </fieldset>
+    
+    
+</body>
+</html>

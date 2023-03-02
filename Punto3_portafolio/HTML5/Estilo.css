@@ -1,0 +1,243 @@
+
+body{
+    background-color: grey;
+    width: 1024px;
+    margin: auto;
+    
+}
+fieldset{
+    border: 1px solid black;
+
+}
+
+.Header{
+    background-color: rgb(20, 117, 117);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
+    
+    
+
+}
+
+img{
+    
+    width: 150px;
+    height: 250;
+    display: block;
+    border: 10px solid white;
+    margin: 30px auto;
+    filter: drop-shadow(5px 5px 15px black);
+}
+
+
+
+.Informacion{
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav{
+    text-align: left;
+    background-color:rgb(20, 117, 117);
+}
+
+a {
+    text-align: center;
+    display: block;
+    width: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    background-color: rgb(140, 239, 239);
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin: 10px;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    background-color: transparent;
+    border: 2px solid  rgb(140, 239, 239) ;
+    color:  white;
+}
+
+.certificaciones{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: none;
+}
+
+.boton2{
+    background-color:rgb(39, 44, 44);
+    
+}
+
+.img2{
+    text-align: center;
+    overflow: hidden;
+}
+
+.img3{
+    text-align: center;
+}
+.img4{
+    text-align: center;
+}
+.img5{
+    text-align: center;
+}
+
+.imagen1{
+    float: left;
+}
+.Referencias_personales{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+}
+.Referencias_familiares{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.Experiencia_laboral{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.Estudios_realizados{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.padre{
+    text-align: left;
+    float: left;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.madre{
+    width: 280px;
+    text-align: left;
+    float: left;
+}
+
+.hermano{
+    width: 280px;
+    text-align: left;
+    float: left;
+}
+
+.comfenalco{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.ibague{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.Cv{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+iframe{
+    width: 1000px;
+    height: 630px;
+    float: center;
+}
+
+#botonfondo{
+    font-style: italic;
+    margin-left: 700px;
+    padding: 10px;
+}
+select{
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid  rgb(1, 8, 8) ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.select::after{
+    content:´\25BC´;
+}
+
+.lista{
+    width: 100%;
+    list-style: none;
+    height: 100px;
+    border-bottom: 1px solid;
+    transition:.7s;
+    overflow: hidden;
+}
+
+.enlac1{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: azure;
+    
+}
+
+.enlace1{
+    transition: all .7s;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.fa-chevron-down{
+    transition: .3s;
+
+}
+
+.acordeon{
+
+    background-color: rgb(5, 5, 5);
+    color: aliceblue;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: .100s;
+    
+
+}
+
+.active, .acordeon:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.panel{
+    padding: 0px 20px;
+    background-color: rgb(81, 79, 79);
+    display: none;
+    overflow: hidden;
+    transition: .100s;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    
+}

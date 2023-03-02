@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body bac id="body" >
+    <header id="header">
+        <fieldset>
+            <legend>"" Color de fondo ""</legend>
+        <select id="Seleccion" onchange="colorChange()">
+            <option value="grey">gris</option>
+            <option value="green">Verde</option>
+            <option value="tomato">Rojo anaranjado</option>
+            <option value="cyan">agua marina</option>
+
+        </select>
+        </fieldset>
+        
+        
+        <div>
+            <ol>
+                <div id="idimpar" class="impar">
+                    <li>
+                        mango
+                    </li>
+                </div>
+                <div  id="iddpar" class="par">
+                    <li>
+                        banano
+                    </li>
+                </div>
+                <div id="idimpar2"  class="impar">
+                    <li>
+                        fresa
+                    </li>
+                </div>
+                <div id="iddpar2" class="par">
+                    <li>
+                        mandarina
+                    </li>
+                </div>
+                <div id="idimpar3"  class="impar">
+                    <li>
+                        manzana
+                    </li>
+                </div>
+                <div id="iddpar3" class="par">
+                    <li>
+                        mora
+                    </li>
+                </div>
+                <div id="idimpar4"  class="impar">
+                    <li>
+                        uva
+                    </li>
+                </div>
+                <div id="iddpar4" class="par" >
+                    <li>
+                        pera
+                    </li>
+                </div>
+                <div id="idimpar5"  class="impar">
+                    <li>
+                        melon
+                    </li>
+                </div>
+                <div id="iddpar5" class="par">
+                    <li>
+                        piña
+                    </li>
+                </div>
+    
+               
+            </ol>
+        </div>
+
+        <input type="submit" value="Boton para pares" name="frutaspares" onclick="cambiarColor()">
+        <input type="submit" value="Boton para impares" name="frutasimpares" onclick="cambiarColor2()" >
+    </header>   
+    
+    <script src="botones.js"></script>
+</body>
+</html>

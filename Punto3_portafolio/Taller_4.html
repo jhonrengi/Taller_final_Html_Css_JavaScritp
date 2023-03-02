@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 4</title>
+    <script src="Diseño2.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="main()"  class="body3">
+
+    <fieldset class="padre">
+        <header class="header3">
+            <h1 class="Titulo">
+                Taller de Arreglos
+            </h1>
+    
+            <p>
+                A continuación se describirán los ejercicios que deberá realizar. Por favor guardar los ejercicios dado que serán requeridos en entregas posteriores. Todos los ejercicios deben estar escritos en PSeInt con el perfil Estricto.    
+            </p>
+    
+            <ol>
+                <li>
+                    Crear un vector de tipo Entero con 5 posiciones, llenarlo con información solicitada al usuario. Después de recoger toda la información, se requiere imprimir el índice de cada posición en el arreglo con su valor de la siguiente manera: <br> <img src="arreglo1.png" alt=""> 
+                </li>
+                <li>
+                    Crear un arreglo de números enteros de 20 posiciones, el cual, debe ser llenado con números aleatorios entre 1 y 100; después de haber llenado dicho arreglo, se debe volver a recorrer utilizando un ciclo diferente al que se usó para llenarse e imprimir los números pares e impares. Ejemplo <br> <img src="arreglo2.png" alt="">               
+                </li>
+                <li>
+                    Imprimir los números primos del 1 al 1000, el resultado debe ser buscado de forma matemática.
+                </li>
+                <li>
+                    Dada la siguiente matriz bidimensional, el cual debe de quemar en el código <br> <img src="arreglo3.png" alt=""> <br> Utilizando el conocimiento adquirido, a excepción de hacerlo de forma manual, imprima la siguiente matriz bidimensional. <br> <img src="arreglo3.1.png" alt="">
+                </li>
+                
+                <li>
+                    Se debe de imprimir el siguiente cuadro. <br> <img src="arreglo4.png" alt="">  <br> El usuario deberá insertar la fila y columna de la cual desea ver el resultado, el resultado de cada celda debe estar previamente calculado en una matriz bidimensional la cual cada resultado obedecerá a la fila y columna insertada por el usuario.             
+                </li>
+
+            </ol>    
+        </header>
+
+        
+
+        <article>
+            
+            <button class="acordeon"><h1 class="pseint">
+                Solucion PSeint
+            </h1> </button>
+            <div class="panel">
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 1 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller4_1
+                                    Definir matriz Como Entero;
+                                    Definir i Como Entero;
+                                    Definir valore,valore2,valore3,valore4,valore5 Como Entero;
+                                    Dimension matriz[5];
+                                    Escribir "Porfavor digite un numero al azar: ";
+                                    Leer valore;
+                                    Escribir "Porfavor digite un numero al azar: ";
+                                    Leer valore2;
+                                    Escribir "Porfavor digite un numero al azar: ";
+                                    Leer valore3;
+                                    Escribir "Porfavor digite un numero al azar: ";
+                                    Leer valore4;
+                                    Escribir "Porfavor digite un numero al azar: ";
+                                    Leer valore5;
+                                    
+                                    matriz[0]&lt-valore;
+                                    matriz[1]&lt-valore2;
+                                    matriz[2]&lt-valore3;
+                                    matriz[3]&lt-valore4;
+                                    matriz[4]&lt-valore5;
+                                    
+
+                                    Para i&lt-0 Hasta 4 Con Paso 1 Hacer
+                                        Escribir "[0]"," = ",matriz[0];
+                                        Para i&lt-1 Hasta 4 Con Paso 1 Hacer
+                                            Escribir "[1]"," = ",matriz[1];
+                                            Para i&lt-2 Hasta 4 Con Paso 1 Hacer
+                                                Escribir "[2]"," = ",matriz[2];
+                                                Para i&lt-3 Hasta 4 Con Paso 1 Hacer
+                                                    Escribir "[3]"," = ",matriz[3];
+                                                    Para i&lt-4 Hasta 4 Con Paso 1 Hacer
+                                                        Escribir "[4]"," = ",matriz[4];
+                                                    FinPara
+                                                FinPara
+                                            FinPara
+                                        FinPara
+                                    FinPara
+
+                                    
+                                    
+                                FinProceso
+
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller4_1.png" alt="" width="600">
+                        </pre>
+                    </div>
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    
+                    <button class="acordeon">punto 2 </button>
+                    <div class="panel">
+                        <pre>
+                        
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller4_2
+                                    Definir matriz Como Entero;
+                                    Dimension matriz[20];
+                                    Definir i Como Entero;	
+                                    i&lt-0;
+
+                                    Mientras i&lt=19 Hacer
+                                        Para i&lt-0 Hasta 19 Con Paso 1 Hacer
+                                            matriz[i]&lt-Aleatorio(1,100);
+                                            Si matriz[i]%2=0 Entonces
+                                                Escribir "Numero par"," ",matriz[i], " ";
+                                            SiNo
+                                                Escribir "Numero impar"," ",matriz[i];
+                                            FinSi
+                                            
+                                        FinPara
+                                    FinMientras
+                                    
+                                    
+                                FinProceso
+
+    
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller4_2.png" alt="" width="700">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    
+                    <button class="acordeon">punto 3 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller4_3
+                                    Definir matriz Como Entero;
+                                    Dimension matriz[1000];
+                                    Definir i,contador,num Como Entero;
+                                    contador&lt-0;
+                                    Repetir
+                                        Escribir "Porfavor digite un numero del 1 al 1000: ";
+                                        Leer num;
+                                        Para i&lt-1 Hasta num Con Paso 1 Hacer
+                                            Si num%i=0 Entonces
+                                                contador&lt-contador+1;
+                                            FinSi
+                                        FinPara
+                                        Si contador=2 Entonces
+                                            Escribir "Es un numero primo"," ", num;
+                                        SiNo
+                                            Escribir "No es un numero primo"," ", num;
+                                        FinSi
+                                    Hasta Que i>num;
+                                    
+                                FinProceso
+
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller4_3.png" alt="" width="800">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    
+                    <button class="acordeon">punto 4 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller4_4
+                                    Definir filas, columnas Como Entero;
+                                    Definir matriz Como caracter;
+                                    Dimension matriz[4,5];
+                                    
+                                    matriz[0,0]&lt-"01";
+                                    matriz[0,1]&lt-"02";
+                                    matriz[0,2]&lt-"03";
+                                    matriz[0,3]&lt-"04";
+                                    matriz[0,4]&lt-"05";
+                                    
+                                    matriz[1,0]&lt-"06";
+                                    matriz[1,1]&lt-"07";
+                                    matriz[1,2]&lt-"08";
+                                    matriz[1,3]&lt-"09";
+                                    matriz[1,4]&lt-"10";
+                                    
+                                    matriz[2,0]&lt-"11";
+                                    matriz[2,1]&lt-"12";
+                                    matriz[2,2]&lt-"13";
+                                    matriz[2,3]&lt-"14";
+                                    matriz[2,4]&lt-"15";
+                                    
+                                    matriz[3,0]&lt-"16";
+                                    matriz[3,1]&lt-"17";
+                                    matriz[3,2]&lt-"18";
+                                    matriz[3,3]&lt-"19";
+                                    matriz[3,4]&lt-"20";
+                                    
+                                    Para filas&lt-0 Hasta 3 Con Paso 1 Hacer
+                                        Si filas = 0 o filas= 2 Entonces
+                                            Para columnas&lt-0 Hasta 4 Con Paso 1 Hacer
+                                                Escribir matriz[filas,columnas]," ", Sin Saltar;
+                                            FinPara
+                                        SiNo
+                                            Para columnas&lt-4 Hasta 0 Con Paso -1 Hacer
+                                                Escribir matriz[filas,columnas]," ", Sin Saltar;
+                                            FinPara
+                                        FinSi
+                                        Escribir " ";
+                                    FinPara
+                                    
+                                FinProceso
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller4_4.png" alt="" width="500">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    
+                    <button class="acordeon">punto 5 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en PSeInt</legend>
+                            <code>
+                                Proceso Taller4_5
+                                    Definir matriz Como Entero;
+                                    Definir filas, columna Como Entero;
+                                    Dimension matriz[11,11];
+                                    
+                                    Repetir
+                                        
+                                        Para filas&lt-0 Hasta 10 Con Paso 1 Hacer
+                                            
+                                            Para columna&lt-0 Hasta 10 Con Paso 1 Hacer
+                                                matriz[filas,columna]&lt-filas*columna;
+                                //				Escribir matriz[filas,columna], "    " Sin Saltar;
+                                            FinPara
+                                            
+                                            
+                                //			Escribir "";
+                                        FinPara
+                                        
+                                        
+                                        Para filas&lt-1 Hasta 10 Con Paso 1 Hacer
+                                            Para columna&lt-1 Hasta 10 Con Paso 1 Hacer
+                                                //Se realiza este condicional para dimensionar la tabla y que todos los valores queden ordenados, de los contrario la tabla se veria desordeanda.
+                                                si filas&lt>10 Entonces
+                                                    Escribir columna, "x", filas, "     " Sin Saltar;
+                                                SiNo
+                                                    Escribir columna, "x", filas, "    " Sin Saltar;
+                                                FinSi
+                                                
+                                            FinPara
+                                            Escribir " ";
+                                        FinPara
+                                        
+                                        
+                                        Escribir "Porfavor digite el numero exacto de la fila que desea observar: ";
+                                        leer filas;
+                                        Escribir "Porfavor digite el numero exacto de la columna que desea observar: ";
+                                        leer columna;
+                                        Escribir " El resultado de la operacion es la siguiente: ";
+                                        Escribir matriz[filas,columna];
+                                    
+                                    
+                                    Hasta Que filas>11;
+                                    
+                                    
+                                FinProceso
+
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de PSeInt</legend>
+                            <img src="taller4_5.png" alt="" width="800">
+                        </pre>    
+                    </div>
+    
+                    
+                </fieldset>
+
+                
+            </div>
+
+            
+
+            
+
+            
+        </article>
+        
+        <article>
+
+
+            <button class="acordeon"><h1 class="pseint">
+                Solucion Java
+            </h1> </button>
+            <div class="panel">
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 1 </button>
+                    <div class="panel">
+                        
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                
+                                import java.util.Scanner;
+
+                                public class Taller4_1 {
+
+
+                                    public static void main(String[] args) {
+
+                                        int vector[] = new int[5];
+                                        Scanner dato1 = new Scanner(System.in);
+                                    
+
+                                        int numero1=0;
+                                        int numero2=0;
+                                        int numero3=0;
+                                        int numero4=0;
+                                        int numero5=0;
+
+                                        System.out.println("Digite un numero al azar: ");
+                                        numero1 = dato1.nextInt();
+
+                                        System.out.println("Digite un numero al azar: ");
+                                        numero2 = dato1.nextInt();
+
+                                        System.out.println("Digite un numero al azar: ");
+                                        numero3 = dato1.nextInt();
+
+                                        System.out.println("Digite un numero al azar: ");
+                                        numero4 = dato1.nextInt();
+
+                                        System.out.println("Digite un numero al azar: ");
+                                        numero5 = dato1.nextInt();
+
+                                        vector[0] = numero1;
+                                        vector[1] = numero2;
+                                        vector[2] = numero3;
+                                        vector[3] = numero4;
+                                        vector[4] = numero5;
+
+                                        for (int i = 0; i &lt vector.length; i++) {
+                                            System.out.println();
+                                            System.out.println("Matriz[0]"+"="+vector[i]);
+
+                                            for (i = 1; i &lt vector.length; i++) {
+                                                System.out.println("Matriz[1]"+"="+vector[i]);
+                                                for (i = 2; i &lt vector.length; i++) {
+                                                    System.out.println("Matriz[2]"+"="+vector[i]);
+                                                    for (i = 3; i &lt vector.length; i++) {
+                                                        System.out.println("Matriz[3]"+"="+vector[i]);  
+                                                        for ( i = 4; i &lt vector.length; i++) {
+                                                            System.out.println("Matriz[4]"+"="+vector[i]);
+                                                            System.out.println();   
+                                                        } 
+                                                    }
+                                                }
+                                            }
+
+
+                                        }
+
+                                        
+
+                                    }
+                                    
+                                }
+
+
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller4_1_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+                
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 2 </button>
+                    <div class="panel">
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Random;
+
+                                public class Taller4_2 {
+                                    public static void main(String[] args) {
+                                        int vector[] = new int[20];
+                                        int i = 0;
+                                        int numeros;
+                                        Random numero = new Random();
+                                        
+                                        
+
+                                        do{
+
+                                            
+                                            
+                                            for(i=0; i&ltvector.length; i++){
+                                                numeros = (int) (Math.random()*1000+1);
+                                                vector[i] = numeros;
+
+                                                if (vector[i]%2 == 0){
+                                                    System.out.println("Numero par "+vector[i]);
+                                                    
+                                                }else{
+                                                    System.out.println("Numero impar "+vector[i]);
+                                                    
+                                                }
+
+                                                vector[i] = 0;
+                                            }
+                                            
+
+                                        }while(i&ltvector.length);
+                                        
+                                    }
+                                    
+                                }
+
+                                
+        
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller4_2_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+    
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 3 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Random;
+                                import java.util.Scanner;
+
+                                public class Taller4_3 {
+                                    public static void main(String[] args) {
+                                        Scanner dato = new Scanner(System.in);
+                                        int vector[] = new int[1000];
+                                        int i = 0;
+                                        int numeros=0;
+                                        int contador = 0;
+                                        Random numero = new Random();
+                                        
+                                        
+
+                                        do{
+
+                                            System.out.println("Porfavor digite un numero del 1 al 1000: ");
+                                            numeros = dato.nextInt();
+                                            
+                                            for(i=1; i&lt=numeros; i++){
+
+                                                if (numeros%i == 0){
+                                                    contador = contador + 1;
+                                                } 
+                                                
+                                            }
+                                            if ( contador == 2){
+                                                System.out.println("Es un numero primo"+numeros);
+
+                                            }else{
+                                                System.out.println("No es un numero primo"+numeros);
+                                            }
+                                            
+
+                                        }while(i&ltnumeros);
+                                        
+                                    }
+                                    
+                                }
+
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller4_3_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 4 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                public class Taller4_4 {
+
+                                    public static void main(String[] args) {
+                                        
+                                        String matriz [][] = new String [4][5];
+                                        int i,j;
+                                
+                                        matriz [0] [0] = "01";
+                                        matriz [0] [1] = "02";
+                                        matriz [0] [2] = "03";
+                                        matriz [0] [3] = "04";
+                                        matriz [0] [4] = "05";
+                                
+                                        matriz [1] [0] = "06";
+                                        matriz [1] [1] = "07";
+                                        matriz [1] [2] = "08";
+                                        matriz [1] [3] = "09";
+                                        matriz [1] [4] = "10";
+                                
+                                        matriz [2] [0] = "11";
+                                        matriz [2] [1] = "12";
+                                        matriz [2] [2] = "13";
+                                        matriz [2] [3] = "14";
+                                        matriz [2] [4] = "15";
+                                
+                                        matriz [3] [0] = "16";
+                                        matriz [3] [1] = "17";
+                                        matriz [3] [2] = "18";
+                                        matriz [3] [3] = "19";
+                                        matriz [3] [4] = "20";
+                                
+                                        for (i =0 ; i&lt=3; i++){
+                                            for(j = 0; j&lt=4; j++){
+                                                System.out.print(matriz[i][j]+" ");
+                                            }
+                                            System.out.println();
+                                        }
+                                
+                                
+                                        System.out.println();
+                                        System.out.println();
+                                
+                                       for(i=0 ;i&lt=3;i++){
+                                
+                                            if(i==0 || i == 2){
+                                                for(j = 0; j&lt=4; j++){
+                                                    System.out.print(matriz[i][j]+" ");
+                                                }   
+                                            }
+                                            else if(i ==1 || i ==3){
+                                                for(j = 4; j>=0; j--){
+                                                    System.out.print(matriz[i][j]+" ");
+                                                }
+                                            }
+                                            System.out.println();
+                                
+                                       } 
+                                        
+                                
+                                
+                                    }
+                                    
+                                }
+                                
+            
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller4_4_java.png" alt="" width="600">
+                        </pre>
+    
+                    </div>
+                </fieldset>
+    
+                <fieldset class="hijo">
+                    <button class="acordeon">punto 5 </button>
+                    <div class="panel"> 
+                        <pre>
+                            <legend>Codigo en Java</legend>
+                            <code>
+                                import java.util.Scanner;
+                                public class Taller4_5 {
+
+                                    public static void main(String[] args) {
+                                        
+                                        int matriz[][] = new int[11][11];
+                                        int i,j;
+                                        Scanner dato = new Scanner(System.in);
+                                        
+
+                                        
+
+                                        for (i =0 ; i&lt=10; i++){
+                                            for(j = 0; j&lt=10; j++){
+                                                matriz[i][j]=i*j;
+                                                
+                                            }
+                                            System.out.println();
+                                        }
+                                        System.out.println();
+                                        System.out.println();
+
+                                        for(i=0;i&lt=10; i++){
+                                            for(j=0;j&lt=10;j++){
+                                                if(i!=10){
+                                                    System.out.print(j+" x "+i+"   ");
+                                                }
+                                                else{
+                                                    System.out.print(j+" x "+i+"  ");
+                                                }
+                                                
+                                            }
+                                            System.out.println();
+                                        }
+                                        System.out.println();
+                                        System.out.print("Porfavor digite un numero al azar de las filas: ");
+                                        i = dato.nextInt();
+                                        System.out.println();
+                                        System.out.print("Porfavor digite un numero al azar de las columnas: ");
+                                        j = dato.nextInt();
+                                        System.out.println();
+                                        System.out.print("El resultado encontrado dentro de la tabla es: "+matriz[i][j]);
+
+
+                                    }
+                                    
+                                }
+
+    
+                            </code>
+                            
+                            <legend> Imagen tomada de Java</legend>
+                            <img src="taller4_5_java.png" alt="" width="600">
+                        </pre>
+                    </div>
+                </fieldset>
+            </div>
+
+            
+
+        </article>
+
+        <nav>
+            <a href="talleres.html">Menu principal</a>
+        </nav>
+
+        
+
+    </fieldset>
+    
+    
+</body>
+</html>
